@@ -3,7 +3,16 @@
 const { stem } = Astro.props;
 import '/src/styles/global.css';
 ---
-<div id="content-wrapper">
+<div class="bidding-tree">
     { stem }
     <slot />
 </div>
+
+<style>
+.bidding-tree {
+    ul {
+        list-style-type: none;
+        line-height: 115%;
+    }
+}
+</style>
