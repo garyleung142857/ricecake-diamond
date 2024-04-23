@@ -1,21 +1,34 @@
 ---
-title: Experiment
+title: Opening Bids
 ---
 
 import BiddingTree from '/src/components/BiddingTree.astro'
 
-<BiddingTree stem="Hi">
-
-- item 1
-- item 2
-  - item 2.1
-  - item 2.2
-- item 3
-- item 4
-  - 1!s
-  - 2!h
-  - 3!d
-  - 4!c
-  - 5!n
+<BiddingTree>
+Openings
+- 1!c: 0+!c 12-16 unbal or 14-16 bal. NF
+- 1!d: 17+ any. Forcing
+- 1!h: 8-11 4+!h. Not 4333 / 4432. May have a longer minor
+- 1!s: 8-11 4+!s. Not 4333 / 4432. May have a longer minor
+- 1!n: (10)11-13. May have 5M / 6m
+- 2!c: 8-11 6+!c or 5=!c 4+!d. No 4-card major
+- 2!d: 8-11 6+!d or 5=!d 4+!c. No 4-card major
+- 2!h: 12-14 5+!h unbal (6+!h or singleton). No 4+!s
+- 2!s: 12-14 5+!s unbal (6+!s or singleton). No 4+!h
+- 2!n: 12-14 5+5+ minors
+- 3/4/5X: Preempt
+- 3!n: 12-16 7+ solid major. 8.5 - 9.5 tricks. No side Ace
 
 </BiddingTree>
+
+<BiddingTree>
+1!d - 1!s; 1N
+- 2!c: 4+!h (not 4+!s) Continue like 1!d-2!c
+- 2!d: 8-11 Bal.
+  - 2!h: Ask
+    - 2!s: 44 same color or major 4333
+    - 2!n: 44 same rank
+- 2!d: 8-11 5m332
+- 2!s: 3-suiter short M
+</BiddingTree>
+

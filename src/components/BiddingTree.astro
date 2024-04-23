@@ -1,18 +1,74 @@
-
 ---
 const { stem } = Astro.props;
+import {h} from 'hastscript'
+import { visit, CONTINUE } from 'unist-util-visit'
+import { rehype } from 'rehype'
+
 import '/src/styles/global.css';
+
+const bodyHtml = await Astro.slots.render('default')
+const breakCalls = () => (tree: any) => {
+    visit(tree, 'element', (node: any) => {
+        if(node.tagName === 'p') {
+            if (node.properties.class == undefined) {
+                node.properties.class = ['tree-stem']
+            } else {
+                node.properties.class.push('tree-stem')
+            }
+            return CONTINUE
+        }
+        node.children = node.children.filter(
+            (child) => !/^\n+$/.test(child.value)
+        )
+        if (node.tagName !== 'li') return CONTINUE
+        
+        const colonIndex = node.children.findIndex(c => c.value?.indexOf(':') > -1)
+        if (colonIndex === -1) return CONTINUE
+        let texts = node.children[colonIndex].value.split(':', 2)
+        let newChildren = [
+            h('span.tree-call', node.children.slice(0, colonIndex).concat(h('text', texts[0]))),
+            h('text', texts[1].trim()),
+            ...node.children.slice(colonIndex + 1)
+        ]
+        
+        node.children = newChildren
+    })
+}
+
+
+const processedHtml = await rehype()
+    .use(breakCalls)
+    .process(bodyHtml)
+
 ---
 <div class="bidding-tree">
-    { stem }
-    <slot />
+    <Fragment set:html={processedHtml} />
 </div>
 
 <style>
 .bidding-tree {
+    max-width: 500px;
+    background-color: azure;
+    padding: 10px;
     ul {
+        margin-top: unset !important;
         list-style-type: none;
         line-height: 115%;
+        padding-left: 2em;
+    }
+    > ul {
+        padding-left: 0.5em;
+    }
+
+    .tree-stem {
+        font-weight: bold;
+        border-bottom: solid 2px rgb(50, 50, 132);
+        margin-bottom: 5px;
+    }
+    .tree-call {
+        display: inline-block;
+        min-width: 3em;
+        padding-right: 0.5em;
     }
 }
 </style>
