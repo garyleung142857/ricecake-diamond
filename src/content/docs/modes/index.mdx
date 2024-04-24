@@ -1,0 +1,84 @@
+---
+title: Modes and Cornerstones
+description: Modes and Cornerstones
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+
+**1!h, 1!s, 1!n, 2!c, and 2!d** are the **Cornerstones** (CS) bids of the system. With different **modes** (preceding sequences), CS bids show the same distributions with different strengths. Continuations are similar with some variations.
+
+## Shapes of CS Bids
+
+The shapes of the 5 CS bids includes all possible shapes within a point range
+
+- 1!h: 4+!h. Not 4333 / 4432. May have a longer minor
+- 1!s: 4+!s. Not 4333 / 4432. May have a longer minor
+- 1!n: Balanced. May be 5M332 or 6m322 or 5422 both minors
+- 2!c: 6+!c or 5=!c 4+!d. No 4-card major
+- 2!d: 6+!d or 5=!d 4+!c. No 4-card major
+
+When having both majors, opening the longer one, or the stronger one if equal in length.
+
+Similarly, when having both minors, opening the lonfer one, or the stronger one if equal in length.
+
+
+## Sequences of Different Modes
+
+{/* <BiddingTree>
+- **CS**: **Mode 0** 8-11 unbal or 10-13 bal 
+- 1!c: 12-16 unbal or 14-16 bal
+    - **CS**: **Mode 1** 8-11 unbal or 9-11 bal 
+    - 1!d: 0-7(8) or 12+, too weak or too strong for CS
+        - **CS**: **Mode 2** 12-16 unbal or 14-16 bal
+- P: 0-7 unbal or 0-10 bal
+    - **CS**: **Mode 3** 12-16 unbal or 14-16 bal 
+    - 1!c: 12-16 unbal or 14-16 bal
+        - **CS**: **Mode 4** 5-7 Any 
+        - 1!d: 0-4 or 8-10 bal, too weak or too strong for CS
+        - **CS**: **Mode 5** 12-16 unbal or 14-16 bal
+</BiddingTree> */}
+
+<BiddingTree>
+Mode 0: [CS]
+- CS bidder: 8-11 unbal / (10)11-13 Bal
+- Partner: Any strength
+</BiddingTree>
+
+<BiddingTree>
+Mode 1: 1!c - [CS]
+- CS bidder: 8-11 unbal / (10)11-13 Bal
+- Partner: 12-16 unbal / 14-16 bal
+- Same as Mode 0, except 1!c - 1M; 3M is 5=M invite.
+</BiddingTree>
+
+<BiddingTree>
+Mode 2: 1!c - 1!d; [CS]
+- CS bidder: 12-16 unbal / 14-16 bal
+- Partner: 0-7(8) or 12+ GF
+- Same as Mode 0, except the following
+    - Responder's invite at or below 2!n remains invite (by shape, not HCP)
+    - Responder's invite above 2!n becomes GF
+</BiddingTree>
+
+<BiddingTree>
+Mode 3: P - [CS]
+- CS bidder: 12-16 unbal / 14-16 bal
+- Partner: 0-7 unbal or 0-10 bal
+- Same as Mode 0, except <u>partner borrows 3 HCPs from the CS bidder</u>
+- P - 1M; 2!c / 2!d, P - 2m have different developments (Modified Drury)
+</BiddingTree>
+
+<BiddingTree>
+Mode 4: P - 1!c; [CS]
+- CS bidder: 5-7
+- Partner: 17-19
+- Same as Mode 1, except <u>CS bidder borrows 3 HCPs from partner</u>
+</BiddingTree>
+
+<BiddingTree>
+Mode 5: P - 1!c; 1!d - [CS]
+- CS bidder: 17-19
+- Partner: 0-4, or 8-10 bal
+- Same as Mode 2, except <u>partner borrows 3 HCPs from the CS bidder</u>
+</BiddingTree>
+

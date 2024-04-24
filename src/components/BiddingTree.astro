@@ -4,8 +4,6 @@ import {h} from 'hastscript'
 import { visit, CONTINUE } from 'unist-util-visit'
 import { rehype } from 'rehype'
 
-import '/src/styles/global.css';
-
 const bodyHtml = await Astro.slots.render('default')
 const breakCalls = () => (tree: any) => {
     visit(tree, 'element', (node: any) => {
@@ -27,7 +25,7 @@ const breakCalls = () => (tree: any) => {
         let texts = node.children[colonIndex].value.split(':', 2)
         let newChildren = [
             h('span.tree-call', node.children.slice(0, colonIndex).concat(h('text', texts[0]))),
-            h('text', texts[1].trim()),
+            h('text', texts[1].trimStart()),
             ...node.children.slice(colonIndex + 1)
         ]
         
@@ -47,17 +45,19 @@ const processedHtml = await rehype()
 
 <style>
 .bidding-tree {
-    max-width: 500px;
-    background-color: azure;
     padding: 10px;
     ul {
-        margin-top: unset !important;
+        margin-top: 0 !important;
         list-style-type: none;
-        line-height: 115%;
-        padding-left: 2em;
+        padding-left: 3em;
     }
     > ul {
         padding-left: 0.5em;
+    }
+    
+    li {
+        margin-top: 0 !important;
+        line-height: 150%;
     }
 
     .tree-stem {

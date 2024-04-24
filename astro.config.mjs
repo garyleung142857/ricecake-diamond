@@ -6,27 +6,22 @@ import { escapeSymbol } from '/src/escapeSymbol'
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
+			title: 'Rice Cake Diamond',
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					label: 'Introduction',
+					autogenerate: {directory: 'introduction'},
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Modes and Cornerstones',
+					autogenerate: {directory: 'modes'},
 				},
 				{
-					label: 'Experiment',
-					autogenerate: {directory: 'experiment'},
-				}
+					label: 'Developments',
+					autogenerate: {directory: 'developments'},
+				},
 			],
+			customCss: ['./src/styles/global.css']
 		}),
 	],
 	markdown: {
