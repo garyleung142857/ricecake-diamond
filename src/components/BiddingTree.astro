@@ -1,6 +1,5 @@
 ---
-const { stem } = Astro.props;
-import {h} from 'hastscript'
+import { h } from 'hastscript'
 import { visit, CONTINUE } from 'unist-util-visit'
 import { rehype } from 'rehype'
 
@@ -8,15 +7,21 @@ const bodyHtml = await Astro.slots.render('default')
 const breakCalls = () => (tree: any) => {
     visit(tree, 'element', (node: any) => {
         if(node.tagName === 'p') {
+            node.tagName = 'h5'
             if (node.properties.class == undefined) {
                 node.properties.class = ['tree-stem']
             } else {
                 node.properties.class.push('tree-stem')
             }
+            let nodeId = ''
+            visit(node, 'text', (textNode: any) => {
+                nodeId = nodeId + textNode.value
+            })
+            node.properties.id = encodeURIComponent(nodeId)
             return CONTINUE
         }
         node.children = node.children.filter(
-            (child) => !/^\n+$/.test(child.value)
+            (child: any) => !/^\n+$/.test(child.value)
         )
         if (node.tagName !== 'li') return CONTINUE
         
@@ -32,7 +37,6 @@ const breakCalls = () => (tree: any) => {
         node.children = newChildren
     })
 }
-
 
 const processedHtml = await rehype()
     .use(breakCalls)
@@ -68,7 +72,7 @@ const processedHtml = await rehype()
     .tree-call {
         display: inline-block;
         min-width: 3em;
-        padding-right: 0.5em;
+        padding-right: 1.5em;
     }
 }
 </style>

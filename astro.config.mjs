@@ -4,27 +4,23 @@ import { escapeSymbol } from '/src/escapeSymbol'
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'Rice Cake Diamond',
-			sidebar: [
-				{
-					label: 'Introduction',
-					autogenerate: {directory: 'introduction'},
-				},
-				{
-					label: 'Modes and Cornerstones',
-					autogenerate: {directory: 'modes'},
-				},
-				{
-					label: 'Developments',
-					autogenerate: {directory: 'developments'},
-				},
-			],
-			customCss: ['./src/styles/global.css']
-		}),
-	],
-	markdown: {
-		rehypePlugins: [escapeSymbol]
-	}
+    integrations: [
+        starlight({
+            title: 'Rice Cake Diamond',
+            sidebar: [
+                {
+                    label: 'Introduction',
+                    autogenerate: {directory: 'introduction'},
+                },
+                {
+                    label: 'Modules',
+                    autogenerate: {directory: 'modules'},
+                },
+            ],
+            customCss: ['./src/styles/global.css']
+        }),
+    ],
+    markdown: {
+        rehypePlugins: [escapeSymbol]
+    }
 });
