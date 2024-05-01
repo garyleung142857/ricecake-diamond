@@ -1,8 +1,6 @@
 ---
 title: Cornerstone Developments
 description: Developments of cornerstones
-tableOfContents:
-    maxHeadingLevel: 4
 sidebar:
     label: Cornerstone Developments
     order: 1
@@ -12,8 +10,6 @@ import BiddingTree from '/src/components/BiddingTree.astro'
 import { Aside } from '@astrojs/starlight/components'
 
 ## 1M Cornerstones
-
-### 1M Developments
 
 <BiddingTree>
 1!h Cornerstone
@@ -32,7 +28,7 @@ import { Aside } from '@astrojs/starlight/components'
     - 2!n: 6+!h 5=m. Then minors are P/C
     - 3m: 5+!h 6+X
     - 3!h: 6+!h Max
-- 2!c: Art. GF
+- 2!c: Art. GF. [Relay](/modules/relay#1M%20-%202%E2%99%A3)
 - 2!d: Art. 3+!h Inv to game value. Spiral raise
 - 2!h: Wide range raise. Spiral raise
 - 2!s/3m: 6+ suit. inv
@@ -47,7 +43,7 @@ import { Aside } from '@astrojs/starlight/components'
 <BiddingTree>
 1!s Cornerstone
 - 1!n: NF. 
-- 2!c: Art. GF
+- 2!c: Art. GF. [Relay](/modules/relay#1M%20-%202%E2%99%A3)
 - 2!d: Art. 5+!h F1. Either 6+!h constructive+ or 5=!h inv+. No slam
     - 2!h: Catchall (No 3=!h / 5=!s / 5+m). Any strength
         - P: 6+!h. To play
@@ -189,8 +185,6 @@ P - 1M
 
 ### 2!c Puppet to 2!d
 
-1!n - 2!c is an unconditional puppet to 2!d
-
 <BiddingTree>
 1!n - 2!c; 2!d
 - P: Weak with !d
@@ -229,7 +223,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 - 3!n/4M: To play
 </BiddingTree>
 
-### Major Transfers
+### 2!d/!h Transfers
 
 #### Normal Accepts
 
@@ -259,7 +253,7 @@ Typical hands include:
 1!n - 2Red; 2M - 2!n
 - 3!c: Ask shortage. Does not promise / deny M fit
     - 3!d: Short oM
-        - 3!h: Relay. Ask minor
+        - 3!h: Ask minor
             - 3!s: 4!c 3-4!d COG
             - 3!n: 4=!d 3-4!c COG
             - 4m: 4=m 3-4om Forcing
@@ -358,3 +352,188 @@ Then the development follows the following rules:
 </BiddingTree>
 
 ### 3!d 4-4 Majors GF
+<BiddingTree>
+1!n - 3!d
+- 3M: Fit M. Not the worst hand
+    - 3!n: Disperse values. MST
+    - 3m: Shortness. ST
+    - 4M: To play
+- 3!n: NF
+- 4m: Double fit. Cue
+- 4M: Fit M. NF
+</BiddingTree>
+
+### Modules
+
+#### Major-Minor Game Forcing
+
+Some sequences shows major-minor two suiters:
+- 5+M 4+m: Ends at 3m
+- 4=M 5+m: Ends at 3!d / 3!h (one under)
+
+<BiddingTree>
+M + m two suiters continuation
+- 3M: Fit M
+- 3oM: Fit m
+- 3N: No fit. NF
+- 4m: If 3oM is available, then fit m Kickback RKCB, else fit m GF
+- 4M: Fit M Min
+- 4om/4oM: Double fit. Help suit slam try
+</BiddingTree>
+
+#### Long Suit Slam Tries
+
+After a transfer to a suit, responder can initiate long suit ST by bidding 3!s (or 3!h after !s), 3N in a minor, or 4-level bids.
+
+<BiddingTree>
+Long suit slam tries (Major) and continuation
+- 3oM:  ST. No short (may have singleton Ace / King)
+    - 4M: Negative
+    - 3!n: Ask weak doubleton (worse than Jx)
+        - 4m: m
+        - 4M: oM
+        - 4!n: No
+- 4X: Splinter
+- 4M: Mild ST. NF
+- 4!n: RKCB
+</BiddingTree>
+
+<BiddingTree>
+Long suit slam tries (Minor) and continuation
+- 3!s: ST. No short (may have singleton A/K) 
+    - 3!n: Negative
+    - 4m: Kickback RKCB
+    - 4om: Ask weak doubleton (worse than Jx)
+        - 4!d / 5!c: (Original suit) om
+        - 4M: M
+        - 4!n: No
+- 3!n: Mild ST. NF
+- 4m: (Responder's suit) Kick back RKCB
+- 4X: Splinter
+</BiddingTree>
+
+### 1!n Contested Auction
+
+<BiddingTree>
+1!n (Dbl) / 1!n (P) P (Dbl)
+- P: Ask for a 5-card suit. May be a strong hand
+    - P: No 5-card suit. To play
+    - Rdbl: Have a 4-card suit.
+        - P: To play 1!n redoubled
+        - 2!c: Weak. P/C
+- Rdbl: A 5+card suit. Puppet to 2!c, then P/C
+- 2!c/!d/!h: 4+4+ in the suit bid and a higher suit. P/C
+- 2!s: GF. 5+5+ in !s and another suit. 2!n asks for the second suit
+- 2!n: GF. 5+5+ minors
+- 3m: GF. 5+!h 5+m
+- Higher: System on
+</BiddingTree>
+
+<BiddingTree>
+1!n (2!c=Anything)
+- System on. Dbl = Puppet to 2!d
+</BiddingTree>
+
+<BiddingTree>
+1!n (2!d/!h/!s)
+- Lebensohl. Slow Show.
+- Dbl: Take out if nat. Suit-showing if art
+- 4!c/!d: Long !h/!s GF
+</BiddingTree>
+
+<BiddingTree>
+1!n (2!n = Minors)
+- Dbl: Values. Further Dbls are penalties
+- 3!c: Ask 4+ majors. Smolen after 3!d
+- 3!d/!h: Transfer. 5+!h/5+!s. Inv+
+    - 3!h/!s: NF. Other rebids are GF
+</BiddingTree>
+
+<BiddingTree>
+1!n (3!c)
+- 3!d/!h: Transfer. 5+!h/5+!s. Inv+
+- 3!s: 5+!d GF
+- 4!c: !d + M GF. 4!d ask M
+- 4!d: Both majors COG
+</BiddingTree>
+
+<BiddingTree>
+1!n (3!d)
+- 3!h: 5+!s Inv+
+- 3!s: 5+!h GF
+- 4!c: !c + M GF. 4!d ask M
+- 4!d: Both majors COG
+</BiddingTree>
+
+<BiddingTree>
+1!n (3M)
+- Refer to Against Major Preempt or Raise
+</BiddingTree>
+
+<BiddingTree>
+1!n, then opponent doubles responder's puppet / asking bid
+- P: No stopper (Responder double to re-puppet)
+- Rdbl: Max with length in the doubled suit
+- Complete / answer: Stopper
+</BiddingTree>
+
+<BiddingTree>
+1!n, then opponent doubles responder's transfer bid
+- P: No fit (Responder double to re-puppet)
+- Rdbl: Max with length in the doubled suit
+- Complete: Fit
+</BiddingTree>
+
+## 2m Cornerstones
+
+<BiddingTree>
+2!c Cornerstone
+- 2!d: 5+!h F1
+- 2!h: Art. GF [Relay](/modules/relay#2m%20-%202%E2%99%A5)
+- 2!s: 5+!s F1
+- 2!n: Good !c raise. (Don't pass without a good reason)
+- 3!c: Blocking
+- 3X: Inv 6+X
+- 3!n: To play
+</BiddingTree>
+
+<BiddingTree>
+2!d Cornerstone
+- 2!h: Art. GF [Relay](/modules/relay#2m%20-%202%E2%99%A5)
+- 2!s: 5+!s F1
+- 2!n: 5+!h F1
+- 3!c: Good !d raise
+- 3X: Inv 6+X
+- 3!n: To play
+</BiddingTree>
+
+### 2m Contested Auction
+
+<BiddingTree>
+2m (Dbl)
+- P: Non-descriptive
+- Rdbl: Our board. New suit net round is F1
+- Jump shift: Pre
+- 2!n: Inv with support. New suit shows shortness
+</BiddingTree>
+
+<BiddingTree>
+2m (Suit bid)
+- Dbl (up to 3!d): Negative. 
+    - Unbid major: 3-card M. 
+    - 2!n: 5431 or 6331 with stop in overcalled suit
+- Dbl (above 3!h): Optional
+- New suit: Constructive
+- 2!n: F1. Bal inv or GF with m support
+- Cue: Ask stopper. May stop at 4m
+</BiddingTree>
+
+### Passed Response
+
+Used in Mode 3
+<BiddingTree>
+P - 2m
+- New suit: 5-7 5+ suit. Tolerance in m
+- 2!n: 8-10 Bal. Inv
+</BiddingTree>
+

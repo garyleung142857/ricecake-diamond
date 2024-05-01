@@ -1,0 +1,136 @@
+---
+title: Natural Overcall
+description: Natural overcalls and their continuations
+sidebar:
+    label: Natural Overcall
+    order: 1
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+## Requirements
+
+Simple suit overcalls are natural:
+- 1-level (6)10-16
+- 2-level 12-16 5 cards or 10-16 6+ cards
+
+Simple NT overcalls shows (15)16-18 bal / semi-bal
+- Natural in sandwich position
+- 13-15 in balancing position
+- System on
+
+## 1-Level Overcalls
+
+<BiddingTree>
+(1!c) 1!d (P)
+- 1M: (New suit at 1-level / non-jump at 2-level) Nat. Usually 5+M. Constr NF
+- 1!n: 9-11. Could hide 4-card major
+- 2!c: F1 with !d support. Usually Bal
+- 2!d: Nat. Wide range. Less than inv
+- 2M: (Jump new suit at 2-level / new suit at 3-level) GF 5+M
+- 2!n: Bal inv
+- 3!c: Art. Mixed raise
+- 3!d: Preempt
+</BiddingTree>
+
+<BiddingTree>
+(1m) 1M (P)
+- 1!s: Nat. Usually 5+!s. Constr NF
+- 1!n: 9-11. Could hide 4=oM
+- 2!c: Art. F1 either
+    - (1) 9+ with 3+M
+    - (2) 13+ Bal / semi bal without support
+- 2!d: Art. 13+ with 5+oM. Natural continuation
+- 2!h: (After 1!s). Constructive NF.
+- 2M: Nat. Wide range. Less than inv
+- 2!n: Limit raise+. Offensive hand
+- 3m: Mixed raise if 1m is nat, else Nat GF
+- 3om/oM: Nat GF
+- 3M: Preempt
+</BiddingTree>
+
+<BiddingTree>
+(1m) 1M (P) 2!c
+- 2!d: Art. 12+
+    - 2M: 9-11 3-card support
+    - 2oM: Nat. 4+oM (may be bad 5). F1
+    - 2!n: GF. Bal / misfit
+    - 3om: Nat GF
+    - 3m: Ask for stopper
+    - 3M: Fit M GF
+    - 3N/4M: To play
+- 2M: Less than 11 and nothing special
+- 2!h: (After 1!s) 8-11 5+!s 4+!h
+- 2!n: 6+M max
+- 3X: Nat 5-5 not the worst hand
+- 3M: 6+M Good suit NF
+</BiddingTree>
+
+<BiddingTree>
+(1!h) 1!s (P)
+- Similar as (1m) 1N except
+- 2!d: Nat 5+!d F1
+- 2!h: Art. 5+!c F1
+</BiddingTree>
+
+## 2-Level Overcalls
+
+<BiddingTree>
+(1M) 2!c (P)
+- 2!d: Art. 10+ 5+oM, or GF 4+oM
+- 2oM: Constr NF
+- 2M: (Cue) 10+ 3-oM. Not suitable for NT
+- 2!n: Nat Inv
+- 3!c: Constructive raise
+- 3M: (Cue). Art. 4=oM choice of game. No stop
+- 3X: GF 5+X with !c support
+- 3!n: To play
+</BiddingTree>
+
+<BiddingTree>
+(1M) 2!d
+- Similar to (1M) 2!c (P) except
+- 2M: (Cue) 10+ Not suitable for NT. May have 4=oM
+- 3!c: Art. Inv+ 5+oM
+</BiddingTree>
+
+<BiddingTree>
+(1!s) 2!h (P)
+- 2!s: 10+. Usually no !h fit
+- 2!n: Good !h raise
+- 3m: 5+m. GF
+- 3!h: Constructive raise
+- 3!s: Ask for stop for 3!n. (Then 4m is NF)
+- 3!n: To play
+</BiddingTree>
+
+## 3rd Seat Reacts
+
+The advancing methods are different.
+
+<BiddingTree>
+3rd Seat Dbl / Bids a Suit
+- Dbl / Rdbl: Strength. Usually no fit
+- 1!n / 3!n: Natural
+- 2!n: Inv with 4+ fit
+- Raise: Blocking
+- Non-jump suit: Competitive
+- Cue opener's suit: Fit. Inv+ Tends to be balanced
+- Cue responder's suit: Fit. Inv+ 5+ inv unbid suit
+</BiddingTree>
+
+<Aside type="note">
+If negative double shows a suit, 2-level of that suit is a cue bid
+</Aside>
+
+<BiddingTree>
+If Responder Raises
+- Dbl: Strength. No convenient bid
+- 2!n: Art. Support. Offensive
+- Non-jump suit: Comp
+- Jump suit / 3-level: GF
+- Raise: Comp
+- 3!n: To play
+- Cue: Fit. Inv+. Tends to be bal
+</BiddingTree>

@@ -1,0 +1,112 @@
+---
+title: Keycard Asking and Control bid
+description: Keycard Asking and Control bid
+sidebar:
+    label: Keycard Asking and Control
+    order: 6
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+## Italian Style Control Bid
+
+Promise 1st or 2nd round control. Bypassing a suit denies a 1st and 2nd round control.
+
+Control bid at 3-level promises an honor (not only shortness). 
+
+### Cuebid Interference
+
+<BiddingTree>
+When they double our cuebid
+- P: No 1st or 2nd round control
+- Rdbl: 1st round control
+- Other: 2nd round control
+</BiddingTree>
+
+<BiddingTree>
+When they overcall during cuebid
+- P: No 1st or 2nd round control, or high enough. Forcing
+- Dbl: 1st round control
+- Bid: 2nd round control
+</BiddingTree>
+
+## RKCB
+
+### Normal and Kickback RKCB 
+RKCB is used. Unless specified, it is asked with the 4!n bid. Sometimes kickback is used.
+
+<BiddingTree>
+RKCB
+- 1st step: 1 or 4 keycards
+- 2nd step: 0 or 3 keycards
+- 3rd step: 2 keycards without trump Queen
+- 4th step: 2 keycards with trump Queen
+- 5th step: Even keycards, working void somewhere
+- Higher: Odd keycards, working void in the bid suit
+</BiddingTree>
+
+<BiddingTree>
+Trump Queen Ask (After 1st / 2nd steps)
+- 5 of trump: No trump Q
+- 5!n: Trump Q, no unbid side King
+- Side suit: Trump Q, side King of the suit bid
+- 6 of trump: Trump Q, side King in a suit unbiddable below 6 of trump
+</BiddingTree>
+
+<BiddingTree>
+After the first 4 steps of RKCB responses
+- 5!n: Ask for the lowest side K
+    - 6X: Lowest unbid King in suit X
+    - 6 of trump: No unbid side King below 6 of trump
+    - Higher: At least two unbid side Kings
+- 6X: General Grand Slam Try. Ask for help in X
+</BiddingTree>
+
+### Weak Keycard Ask
+
+Used when partner has limited strength:
+- 4!c after 3!d/!h/!s
+- 4!d after 3!c
+- 4!n after 4!h/!s
+- 1!d - 1!h ..., then asked by opener
+
+<BiddingTree>
+Weak Keycard Ask
+- 1st step: 0 Keycards. +1 step ask for trump Queen
+- 2nd step: 1 Keycard without trump Q
+- 3rd step: 1 Keycard with trump Q
+- 4th step: 2 Keycards without trump Q
+- 5th step: 2 Keycards with trump Q
+</BiddingTree>
+
+### Exclusion RKCB
+
+A jump to a side suit above 4!h ask for the number of Keycards outside the bid suit
+<BiddingTree>
+ERKCB
+- 1st step: 0 or 3 Keycards. +1 Step ask for trump Queen
+- 2nd step: 1 Keycard. +1 Step ask for trump Queen
+- 3rd step: 2 keycards without trump Queen
+- 4th step: 2 keycards with trump Queen
+</BiddingTree>
+
+### RKCB Interference
+If RKCB is interfered by Dbl / 5!c / 5!d (at most 2 steps)
+<BiddingTree>
+D0P1
+- Dbl: 0 or 3 Keycards
+- P: 1 or 4 Keycards
+- 1st step: 2 Keycards without trump Queen
+- 2nd step: 2 Keycards with trump Queen
+- 3rd step: 2 keycards with a working void
+- 4th step: 1 Keycard with a working void
+</BiddingTree>
+
+If RKCB is interfered by 5!h or above (3 steps or more)
+<BiddingTree>
+DEPO
+- Dbl: Even number of Keycards
+- P: Odd number of keycards
+</BiddingTree>
+

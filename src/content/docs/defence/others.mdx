@@ -1,0 +1,69 @@
+---
+title: Other Defences
+description: Other Defences
+sidebar:
+    label: Other Defences
+    order: 6
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+## Michael Cue Bid and Unusual 2NT
+
+- (1m) 2m: Majors. 5+5+ (8)10-12 or strong
+- (1M) 2M: 5+oM 5+m. (8)10-12 or strong
+- (1X) 2M: 5+5+ in 2 lowest unbid suits. 10-12 or strong
+
+Similar for the balancing position except 2!n (which is 19-21 Bal).
+
+<BiddingTree>
+Advancing Michael Cue Bid / Unusual 2!n
+- Cue bid: ask for stopper for 3!n
+- 2!n: balanced invite
+- Known suit: To play
+- New suit: P/C when partner has shown only 1 known suit, to play otherwise
+</BiddingTree>
+
+## Unusual vs Unusual
+
+<BiddingTree>
+When 2 suits are specified
+- Dbl: Penalty in at least one suit (not yet set up forcing pass)
+- Cue low: Limit raise or better in partner's suit
+- Cue high: GF with 5+ in the 4th suit
+- Others: Compete
+</BiddingTree>
+
+<BiddingTree>
+When only 1 suit is specified
+- Dbl: Penalty in the known suit
+- Cue: Limit raise or better in partner's suit
+- New suit: F1
+- Others: Compete
+</BiddingTree>
+
+## Limited Hand Bidding
+
+<BiddingTree>
+1M (1X/2X) P (P)
+- Dbl: Best suit is M, partner can show pref with singleton honor. 
+- :Expected to have some defensive value
+    - P: Convert to penalty. Be cautious
+    - 2M: Preference
+    - Others: No M tolerance. P/C
+- NT: Tolerance in unbid suits. Offensie hand
+    - !c: P/C
+    - Others: Nat. Cannot raise unless opponent further intervene
+- M: Nat. 6+M. Good suit
+- m: Best suit. 6+. Good suit. No tolerance in unbid suits
+</BiddingTree>
+
+<BiddingTree>
+P (1M) P (1N)
+- Dbl: Any 5-5
+    - New suits: P/C
+    - Cue: Inv
+    - 2!n: Inv with oM
+- 2X: Nat
+</BiddingTree>

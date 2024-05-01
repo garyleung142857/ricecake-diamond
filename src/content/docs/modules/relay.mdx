@@ -1,0 +1,240 @@
+---
+title: Relay
+description: Modules Related to relay
+sidebar:
+    label: Relay
+    order: 5
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+<Aside type="note">
+Please refer to other materials (like KK Relay) to familiarize with the topic
+</Aside>
+
+### Pattern Table
+
+<BiddingTree>
+Patterns with Single Shortage
+| Bid | Short Leg | Long Leg | Single Suit |
+| :---: | :---: | :---: | :---: |
+| 3!s | 5431 | | 6331 |
+| 3!n | 6421 | 5521 | 7(32)1 |
+| 4!c | 6430 | 5530 | 7330 |
+| 4!d | 7420 | (65)20 |
+
+</BiddingTree>
+
+## Tracks
+
+### One suiter continuation
+<BiddingTree>
+- 3!c: Hi short or high and equal. 3!d relay
+    - 3!h: 62(32). 3!s ask => [Table](#pattern-table)
+    - 3!s+: High short.
+- 3!d: Mid short. 3!h ask => [Table](#pattern-table)
+- 3!h: 6322 or 7222. 3!s ask
+- 3!s+: Lo short. [Table](#pattern-table)
+</BiddingTree>
+
+### Two suiters continuation
+<BiddingTree>
+- (X = first shown suit. Y = second shown suit)
+- 2!n: 4=X 5+Y. (Reverser). 3!c: Relay. Replay like direct 3!d+
+- 3!c: 5+X 5+Y. (**Long Leg**) 3!d relay
+    - 3!h: Hi short. 3!s relay => [Table](#pattern-table)
+    - 3!s: 6511 (or 5611 in some situation)
+    - 3!n+: lo short. [Table](#pattern-table)
+- 3!d: 5+X 4=Y. (**Short Leg**) Hi short 3!h ask => [Table](#pattern-table)
+- 3!h: 5422 or 7411 (With 7411, rebid the cheapest !c)
+- 3!s: 5+X 4=Y lo short. [Table](#pattern-table)
+</BiddingTree>
+
+### Balanced Continuation (4333 or 4432)
+<BiddingTree>
+- 2!s: 4432 same color or Major 4333. 2!n ask
+    - 3!c: Major 4333. 3!d ask 4-card (lo-4, hi-4)
+    - 3!d: 4432 same color. Bid doubleton (3!n = !c)
+- 2!n: 4432 same rank. 3!c ask doubleton
+- 3!c: Minor 4333. 3!d ask 4-card
+- 3!d: 4432 same shape. Bid doubleton
+</BiddingTree>
+
+
+### 5332 Continuation
+<BiddingTree>
+- The 5-card suit will be shown first.
+- Relay next step to show doubleton (hi / mid / lo)
+</BiddingTree>
+
+### Three suiters continuation
+<BiddingTree>
+- Pivot either at 2!s (short minor) or 2!n (short major)
+- 1st step: Hi short. 2nd step relay
+    - 3rd step: 4441
+    - 4th to 6th step: 5440. Lo 5 / Mid 5 / Hi 5
+- 2nd step: Lo short 4441
+- 3rd to 5th step: Lo short 5440. Lo 5 / Mid 5 / Hi 5
+</BiddingTree>
+
+## Relay Situations
+
+### 1M - 2!c
+
+<BiddingTree>
+1M - 2!c
+- 2!d: 4!c or any 3 suiters. 2!h relay
+    - 2!s: Three suiters. 2!n ask
+        - 3!c: Short oM. 3!d ask (3!h+ = 4441 / 5!c440 / 5!d440 / 5M440)
+        - 3!d: Short !d: 3!h ask (3!s+ = 4441 / 5!c440 / 5M440)
+        - 3!h+: Short !c. (4441 / 5!d440 / 5M440)
+    - 2!n+ [Two suiters](#two-suiters-continuation)
+- 2!h: 4+!d. [Two suiters](#two-suiters-continuation)
+- 2!s: 5+M 4+oM. [Two suiters](#two-suiters-continuation) (No reverser subtrack)
+- 2!n: 5M(332). 3!c ask doubleton (hi / mid / lo)
+- 3!c+: 6+M single suit. [One suiter](#one-suiter-continuation)
+</BiddingTree>
+
+### 2m - 2!h
+
+<BiddingTree>
+2m - 2!h
+- 2!s: Single suit. Does not want to declare NT. 2!n relay => [One suiter](#one-suiter-continuation)
+- 2!n: Single suit. Want to declare !nt. Relays are off. Natural continuation
+- 3!c+: 5+m 4+om. [Two suiters](#two-suiters-continuation)
+</BiddingTree>
+
+### 1!d Relay
+
+<BiddingTree>
+1!d
+- 1!h: 0-7 Catch all. Negative. See [Opening](/introduction/openings/) section
+- 1!s: Either 4+!h unbal or 8-11 (4333) / (4432) / 5m(332). 1!n relay
+    - 2!c: 4+!h (no 4+!s) unbal. Continue like 1!d - 2!c
+    - 2!d: 8-11 (4333) or (4432). 2!h ask => [Balanced](#balanced-continuation-4333-or-4432)
+    - 2!h: 8-11 5m(332). 2!s ask
+        - 2!n: [5!c332](#5332-continuation)
+        - 3!c+: [5!d332](#5332-continuation). zoomoom to doubleton
+    - 2!s: [Three suiter](#three-suiters-continuation) short minor
+    - 2!n+: 5+4+ majors [Two Suiters](#two-suiters-continuation) (2!n = 5+!s 4=!h)
+- 1!n: 12-14 Bal (including 5332). 2!c relay
+    - 2!d: (4333) or (4432). 2!h ask => [Balanced](#balanced-continuation-4333-or-4432)
+    - 2!h: 5m(332). 2!s ask
+    - 2!s: 5!h(332). [5332](#5332-continuation)
+    - 2!n: 5!s332, zoom to doubleton
+- 2!c: 4+!s unbal (no 4+!h). 2!d ask
+    - 2!h: 4+!s 4+!c. 2!s relay => [Two suiters](#two-suiters-continuation)
+    - 2!s: 5+!s 4+!d. [Two suiters](#two-suiters-continuation) (non-reverser / long leg)
+    - 2!n: 4=!s 5+!d. [Two suiters](#two-suiters-continuation) (reverser)
+    - 3!c+: 6+!s [One suiter](#one-suiter-continuation)
+- 2!d: 5+!c unbal or 3-suiters short major
+    - 2!s: 5+!c 4+!d [Two suiters](#two-suiters-continuation) (non-reverser / long leg)
+    - 2!n: [Three suiter](#three-suiters-continuation) short major
+    - 3!c+: 6+!c [One suiter](#one-suiter-continuation)
+- 2!h: 5+!d unbal. 2!s ask
+    - 2!n: 5+!d 4=!c. [Two suiters](#two-suiters-continuation) (non-reverser)
+    - 3!c+: 6+!d [One suiter](#one-suiter-continuation)
+- 2!s: 8-11 [5!h332](#5332-continuation)
+- 2!n/3m: 8-11 [5!s332](#5332-continuation). Zoom to doubleton
+</BiddingTree>
+
+<Aside type="note">
+15+ Balanced hands are first shown as 8-11 bal.
+</Aside>
+
+## Control Ask and Sign-off Signal
+
+If the shape relay ends at 3!s or 3!n, then
+- 4!c is the control ask
+- 4!d is the sign-off signal, puppet to 4!h for an signoff
+- 4!h+ are natural slam tries
+
+If the shape relay ends at or above 4!c, then the relay step is a control-ask, other bids are sign-off.
+
+Number of controls corresponding to the first step answer
+- 5+ HCP: 0 or 1
+- 8+ HCP: 1 or 2
+- 12+ HCP: 2 or 3
+
+After the **first step** response to control ask, relay to ask the actual number. First step shows minimum, higher to show non-min and zoom to spiral scan.
+
+<Aside type="note">
+Do not count singleton King as control. Singleton Ace is counted as 2 controls.
+</Aside>
+
+## Spiral Scan
+
+After the control-ask is spiral scanning. Honors are shown in the following priority:
+- Ace / King of the first 3 suits (if bal / 5332) or the first 2 suits (if unbal)
+    - Answer "No" if holding both Ace and King
+    - Skip to Queens when you have shown all controls
+- Queens of all suits with 3+ cards
+- Jacks of all suits with 3+ cards
+
+<Aside type="note">
+- Longest suit first. Scan higher ranking suits of the same lengths first.
+- Answer "Yes" by zooming to the next item; answer "no" by stopping.
+</Aside>
+
+<Aside type="caution">
+- If the relay answerer has shown a 6+ suit, the asker bidding that suit at any level is to play. The next step will be the relay step.
+- 6!n+ is never an ask
+- Do not zoom pass 7!c
+</Aside>
+
+<Aside type="danger" title="Unresolved Shapes">
+- 6322 are treated like “6332” or “6333” for unresolved lengths
+- 7(32)1 shapes are treated as “7331”
+- Unresolved (65)11 or (65)20 are treated as "5511" or "5520"
+</Aside>
+
+## Relay Break
+
+Before shapes are fully resolved, asker can break the relay:
+- Up to 3!d are natural. Then only the cheapest NT shows misfit. Suits (either new or mentioned) are cuebid.
+- 3!n / 4M / 5m are natural. To play unless the relay answer is uncapped and with 5+ HCP extra than min
+- 3M or 4m are inv keycard asks in the corresponding suit:
+    - 3!h: !c; 3!s: !d; 4!c: !h; 4!d: !s
+    - First step is negative, then next non-signoff suit is re-ask
+    - 2nd+ are responses to RKCB
+- 4!n is balanced / misfit invite
+
+## Interference
+
+<BiddingTree>
+Interference in Shape Relay in Front of Asker
+- (Dbl): we can ask stopper
+    - P: Ask stopper
+        - Rdbl: No stopper. Relay to continue shape ask
+        - Relay: (Not used)
+        - Answer: Stopper
+    - Rdbl: Suggest to play
+    - Relay: Don't care about the stopper. Continue as normal.
+- (Cheapest bid)
+    - P: Relay
+    - Dbl: Penalty double
+- (Higher bid)
+    - Relay off. Natural continuation
+</BiddingTree>
+
+<BiddingTree>
+Interference in Shape Relay in Front of Answerer
+- (Dbl):
+    - P: No stopper. Rdbl continue relay
+    - Rdbl: (Not used)
+    - Answer: Stopped
+- (Cheapest bid)
+    - P: Substitute
+    - Dbl: Normal response
+- (Higher bid)
+    - Relay off. Natural continuation
+</BiddingTree>
+
+<BiddingTree>
+Interference in control ask / spiral scan
+- (Dbl): Drop 2 steps by utilizing Pass and Rdbl
+- (Cheapest bid): Drop 1 step by utilizing Pass and Dbl
+- (2nd cheapest bid): Relay on, utilizing Pass and Dbl
+- (Higher): Relay off
+</BiddingTree>

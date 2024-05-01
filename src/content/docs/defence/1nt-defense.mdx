@@ -1,0 +1,47 @@
+---
+title: Defence to 1NT
+description: Defence to 1NT
+sidebar:
+    label: Defence to 1NT
+    order: 3
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+<BiddingTree>
+(1N)
+- Dbl: !s + another suit
+    - P: Convert to penalty
+    - 2!c: P/C
+    - 2!d: Art. Strong ask
+        - 2!h: 4-5!h. Min
+        - 2!s: Min. 4+m. 2!n ask m
+        - 2!n: 4-4 majors Max
+        - 3m: 4+!s 4+m Max. 3!h ask 5th !s
+        - 3M: 5=M 4=oM max
+        - 3!n: 5+!s 5+!h max
+    - 2!h/!s: To play
+- 2m: !h + m
+    - P/2!h: Preference
+    - Raise: Blocking
+    - Suit: To play
+    - 2!n: Strong ask
+        - 3m: Min. 4-!h
+        - 3om: Max. 4=!h GF
+        - 3!h: Min. 5=!h
+        - 3!s: Max. 5=!h GF
+- 2M: 5+M Nat
+- 2!n: 5+!c 5+!d
+- 3X: Preemptive
+</BiddingTree>
+
+<Aside type="note">
+Applies for direct seat, pass-out seat, passed hand, or any modes when opponents interfere with a natural 1!n and we have not shown a real suit.
+
+Bid agressively (4-4 okay) opposite strong NT NV. Bid constructively (rule of 20) opposite weak NT.
+
+Dbl denies a good 5-card !s suit. 2m denies a good 5-card !h suit
+
+Third seat redouble is ignored.
+</Aside>

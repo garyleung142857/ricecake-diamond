@@ -1,0 +1,102 @@
+---
+title: 2NT Natural Module
+description: Balanced / semi-Balanced 2!n development
+sidebar:
+    label: 2NT Natural
+    order: 3
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+2!n balanced is not used as an opening. Instead, it is used in the follow situations:
+
+- 1!d - 1!h; 2!n
+- 1!d - 1!h; 1!s - 1!n; 2!n
+- (2X = Natural / weak) 2!n
+- (2X = Natural / weak) P (P) 2!n
+- Any modes of the above sequences where 2!n bidder can be strong
+
+<BiddingTree>
+2!n
+- 3!c: Ask 5-card major
+- 3!d: 5+!h. Transfer to 3!h. May have 4=!s
+- 3!h: 5+!s. No 4+!h.
+- 3!s: Puppet to 3!n. Either to play in 3!n, or minors ST
+- 3!n: Art. 5=!s 4=!h COG
+- 4!c/!d: Long !h / !s
+- 4!h/4!s: Long !c / !d ST
+- 4!n: Inv to 6!n
+- 5m: To play
+</BiddingTree>
+
+### Ask 5-card Major
+
+<BiddingTree>
+2!n - 3!c
+- 3!d: No 5-card major. May have a 4-card major
+    - P: To play. Long !d
+    - 3!h: 3-!h. May have 4=!s
+        - 3!s: 4=!s.
+            - 3!n/4!s: To play
+            - 4m: 5+m ST
+            - 4!h Fit !s ST
+        - 3!n: 3-!s
+    - 3!s: 4=!h. 3=!s
+    - 3!n: Art. 4-4 majors
+- 3M: 5=M
+    - P/3!n/4M: To play
+    - 4m: 5+m ST
+    - oM: Fit M ST
+    - 4!n: Quantitative
+</BiddingTree>
+
+### Transfer
+
+<BiddingTree>
+2!n - 3!d; 3!h
+- 3!s: 3-!s COG. May be long !h ST (Will pull later)
+- 3!n: Art. 5=!h 4=!s COG
+- 4m: Nat ST
+- 4!h: MST
+</BiddingTree>
+
+<BiddingTree>
+2!n - 3!h; 3!s
+- 3!n: 5=!s COG
+- 4m: Nat ST
+- 4!h: Art. Set !s ST
+- 4!s: MST
+</BiddingTree>
+
+<Aside type="note">
+Transferring to opponent's major (e.g. (2!h) 2!n; 3!d) means invite with 5oM.
+</Aside>
+
+### Higher Responses
+
+<BiddingTree>
+2!n - 3!s; 3!n
+- P: To play
+- 4m: 5+m 4+om ST
+- 4M: 5-5 minors, short M
+</BiddingTree>
+
+<BiddingTree>
+2!n - 3!n
+- P: To play. Not interested in major
+- 4M: To play
+</BiddingTree>
+
+<BiddingTree>
+2!n - 4!c/!d
+- 4!d/4!h: General SI
+- 4M: To play
+</BiddingTree>
+
+<BiddingTree>
+2!n - 4!h/!s
+- 1-step: SI. 3/5 Keycards
+- 2-step: SI. 4 Keycards
+- 5m: NF
+</BiddingTree>

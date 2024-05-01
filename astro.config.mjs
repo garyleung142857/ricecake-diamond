@@ -16,6 +16,10 @@ export default defineConfig({
                     label: 'Modules',
                     autogenerate: {directory: 'modules'},
                 },
+                {
+                    label: 'Defence',
+                    autogenerate: {directory: 'defence'},
+                }
             ],
             customCss: ['./src/styles/global.css']
         }),
