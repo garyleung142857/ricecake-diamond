@@ -51,27 +51,27 @@ const processedHtml = await rehype()
 .bidding-tree {
     padding: 10px;
     ul {
-        margin-top: 0 !important;
         list-style-type: none;
-        padding-left: 3.5em;
+        padding-left: 4em;
     }
     > ul {
-        padding-left: 0.5em;
+        padding-left: 0;
     }
     
-    li {
+    ul, li {
         margin-top: 0 !important;
     }
 
     .tree-stem {
         font-weight: bold;
-        border-bottom: solid 2px var(--sl-color-gray-4);
+        border-bottom: solid 2px var(--sl-color-gray-3);
         margin-bottom: 5px;
     }
     .tree-call {
         display: inline-block;
-        min-width: 3.5em;
+        min-width: 4em;
         padding-right: 1em;
+        font-weight: bold;
     }
 }
 </style>
