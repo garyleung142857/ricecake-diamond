@@ -1,5 +1,6 @@
 :root{
 	--sl-line-height: 1.5;
+	--sl-font: 'Noto Sans Serif', sans-serif;
 }
 
 /* Dark mode colors. */
