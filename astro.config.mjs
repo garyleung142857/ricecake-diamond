@@ -21,7 +21,10 @@ export default defineConfig({
                     autogenerate: {directory: 'defence'},
                 }
             ],
-            customCss: ['./src/styles/global.css']
+            customCss: [
+                './src/styles/global.css',
+                './src/styles/markdown.css',
+            ]
         }),
     ],
     markdown: {
