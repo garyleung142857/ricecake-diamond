@@ -50,6 +50,7 @@ const processedHtml = await rehype()
 <style>
 .bidding-tree {
     padding: 10px;
+    border: 1px dotted var(--sl-color-white);
     ul {
         list-style-type: none;
         padding-left: 4em;
@@ -57,16 +58,17 @@ const processedHtml = await rehype()
     > ul {
         padding-left: 0;
     }
-    
+
     ul, li {
         margin-top: 0 !important;
     }
 
     .tree-stem {
         font-weight: bold;
-        border-bottom: solid 2px var(--sl-color-gray-3);
+        text-decoration: underline;
         margin-bottom: 5px;
     }
+
     .tree-call {
         display: inline-block;
         min-width: 4em;
