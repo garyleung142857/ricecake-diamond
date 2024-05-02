@@ -1,52 +1,22 @@
 :root{
 	--sl-line-height: 1.5;
 	--sl-font: 'Noto Sans Serif', sans-serif;
-	.spsymbol, .hesymbol, .disymbol, .clsymbol, .ntsymbol {
-		display: inline-flex;
-		width: 1.5ch;
-		justify-content: center;
-	}
 }
-
 
 /* Dark mode colors. */
 :root {
-	--sl-color-accent-low: #131e4f;
-	--sl-color-accent: #3447ff;
-	--sl-color-accent-high: #b3c7ff;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #eceef2;
-	--sl-color-gray-2: #c0c2c7;
-	--sl-color-gray-3: #888b96;
-	--sl-color-gray-4: #545861;
-	--sl-color-gray-5: #353841;
-	--sl-color-gray-6: #24272f;
-	--sl-color-black: #17181c;
-
-    .spsymbol{color: #6666ff;}
-    .hesymbol{color: #ff6666;}
-    .disymbol{color: #ffcc00;}
-    .clsymbol{color: #66ff99;}
-    .ntsymbol{color: #cccccc;}
+	--sp-symbol: #6666ff;
+	--he-symbol: #ff6666;
+	--di-symbol: #ffcc00;
+	--cl-symbol: #66ff99;
+	--nt-symbol: #cccccc;
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
-	--sl-color-accent-low: #c7d6ff;
-	--sl-color-accent: #364bff;
-	--sl-color-accent-high: #182775;
-	--sl-color-white: #17181c;
-	--sl-color-gray-1: #24272f;
-	--sl-color-gray-2: #353841;
-	--sl-color-gray-3: #545861;
-	--sl-color-gray-4: #888b96;
-	--sl-color-gray-5: #c0c2c7;
-	--sl-color-gray-6: #eceef2;
-	--sl-color-gray-7: #f5f6f8;
-	--sl-color-black: #ffffff;
-
-    .spsymbol{color: #0000cc;}
-    .hesymbol{color: #ff0033;}
-    .disymbol{color: #ff6600;}
-    .clsymbol{color: #009900;}
-    .ntsymbol{color: #333333;}
+	--sp-symbol: #0000cc;
+	--sp-symbol: #6666ff;
+	--he-symbol: #ff0033;
+	--di-symbol: #ff6600;
+	--cl-symbol: #009900;
+	--nt-symbol: #333333;
 }

@@ -3,3 +3,66 @@
 	+ :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
 	margin-top: 1em;
 }
+
+.spsymbol {
+	color: var(--sp-symbol);
+}
+
+.hesymbol {
+	color: var(--he-symbol);
+}
+
+.disymbol {
+	color: var(--di-symbol);
+}
+
+.clsymbol {
+	color: var(--cl-symbol);
+}
+
+.ntsymbol {
+	color: var(--nt-symbol);
+}
+
+.spsymbol, .hesymbol, .disymbol, .clsymbol, .ntsymbol {
+	display: inline-flex;
+	width: 1.5ch;
+	justify-content: center;
+}
+
+.bidding-tree {
+    padding: 10px;
+    border: 1px dotted var(--sl-color-white);	
+}
+
+.bidding-tree ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0 !important;
+}
+
+.bidding-tree li {
+	display: flex;
+	flex-direction: row;
+	margin-top: 0 !important;
+}
+
+.tree-stem {
+	display: inline;
+	border-bottom: 1px solid var(--sl-color-white);
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.tree-call {
+	display: inline-block;
+	flex-shrink: 0;
+	min-width: 3em;
+	max-width: 6em;
+	padding-right: 1em;
+	font-weight: bold;
+}
+
+.tree-def {
+	margin-bottom: 0 !important;
+}
