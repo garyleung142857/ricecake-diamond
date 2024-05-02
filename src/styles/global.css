@@ -3,11 +3,10 @@
 	--sl-font: 'Noto Sans Serif', sans-serif;
 	.spsymbol, .hesymbol, .disymbol, .clsymbol, .ntsymbol {
 		display: inline-flex;
-		width: 1em;
+		width: 1.5ch;
 		justify-content: center;
 	}
 }
-
 
 
 /* Dark mode colors. */
