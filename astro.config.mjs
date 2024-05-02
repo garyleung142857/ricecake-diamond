@@ -4,7 +4,8 @@ import { escapeSymbol } from '/src/escapeSymbol'
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://garyleung142857.github.io/ricecake-starlight/',
+    site: 'https://garyleung142857.github.io/',
+    base: 'ricecake-diamond',
     integrations: [
         starlight({
             title: 'Rice Cake ♦',
