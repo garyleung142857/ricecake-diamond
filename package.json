@@ -11,12 +11,9 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.21.4",
-    "@fontsource/noto-sans-tc": "^5.0.19",
+    "@fontsource/noto-sans": "^5.0.19",
     "astro": "^4.3.5",
     "hast-util-find-and-replace": "^5.0.1",
-    "hastscript": "^9.0.0",
-    "mdast-util-find-and-replace": "^3.0.1",
-    "sharp": "^0.32.5",
-    "unist-builder": "^4.0.0"
+    "hastscript": "^9.0.0"
   }
 }

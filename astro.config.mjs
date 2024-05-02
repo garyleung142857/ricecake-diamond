@@ -28,8 +28,8 @@ export default defineConfig({
                 }
             ],
             customCss: [
-                '@fontsource/noto-sans-tc/400.css',
-                '@fontsource/noto-sans-tc/600.css',
+                '@fontsource/noto-sans/400.css',
+                '@fontsource/noto-sans/600.css',
                 './src/styles/global.css',
                 './src/styles/markdown.css',
             ]
