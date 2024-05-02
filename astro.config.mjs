@@ -10,6 +10,9 @@ export default defineConfig({
         starlight({
             title: 'Rice Cake ♦',
             description: 'Comnpetitive Bridge Bidding System',
+            social: {
+				github: 'https://github.com/garyleung142857/ricecake-diamond',
+			},
             sidebar: [
                 {
                     label: 'Introduction',

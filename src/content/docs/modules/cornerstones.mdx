@@ -29,7 +29,7 @@ import { Aside } from '@astrojs/starlight/components'
     - 3m: 5+!h 6+X
     - 3!h: 6+!h Max
 - 2!c: Art. GF. [Relay](/ricecake-diamond/modules/relay#relaying-1m-cornerstones)
-- 2!d: Art. 3+!h Inv to game value. Spiral raise
+- 2!d: Art. 3+!h Inv to game value. [Spiral raise](/ricecake-diamond/modules/spiral-raises/)
 - 2!h: Wide range raise. [Spiral raise](/ricecake-diamond/modules/spiral-raises/)
 - 2!s/3m: 6+ suit. inv
 - 2!n: Nat misfit inv. Any bid is GF. [Continuation](#1M%20-%202N%3B%203m)
@@ -94,17 +94,17 @@ import { Aside } from '@astrojs/starlight/components'
 - Dbl: Our board. Interested in penalizing opponents. Forcing to 2M
 - 1!n: Nat. NF. May have 3-card support
 - 2M: 3+M support. Wide range. Less than invite. [Spiral Raise](/ricecake-diamond/modules/spiral-raises/)
-- 2!n: 4+ Support
+- 2!n: 4+M. [Limit raise+](/ricecake-diamond/defence/2nt-good-raise/)
 - Suit: Expected to be competitive, but can be weaker. NF
 - JS: Preemptive
 </BiddingTree>
 
 <BiddingTree>
 1M (Suit bid)
-- Dbl (up to 3!d): Negative. Asks partner for unbid 4-card major or the longest suit
-- Dbl (above 3!d): Optional
-- New suit: NF
-- Jump shift: GF
+- Dbl: (up to 3!d) Negative. Asks partner for unbid 4-card major or the longest suit
+- Dbl: (from 3!h) Optional
+- NS: NF
+- JS: GF
 - Raise: Wide range
 - 3M: Pre
 - 4M: To play. Either way
@@ -118,7 +118,7 @@ import { Aside } from '@astrojs/starlight/components'
 - Dbl: Optional. Correctable on offensive hands
 - 2m: Competitive. NF
 - 2M: Wide range. [Spiral raise](/ricecake-diamond/modules/spiral-raises/)
-- 2!n: 4+ support
+- 2!n: 4+ support. [Limit raise+](/ricecake-diamond/defence/2nt-good-raise/)
 - 3X: Preemptive
 </BiddingTree>
 
@@ -228,7 +228,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 #### Normal Accepts
 
 <BiddingTree>
-1!n - 2Red; 2M
+1!n - 2!d/!h; 2M
 - 2!s: 5-5 majors inv+ or 5+!h 4=!s GF
     - 2!n: ask
         - 3!c: 5+!h 4=!s GF. Continue like 1!n - 3!c
@@ -250,7 +250,7 @@ Typical hands include:
 - 5M 4m that does not want to bid 3m directly
 
 <BiddingTree>
-1!n - 2Red; 2M - 2!n
+1!n - 2!d/!h; 2M - 2!n
 - 3!c: Ask shortage. Does not promise / deny M fit
     - 3!d: Short oM
         - 3!h: Ask minor
@@ -279,7 +279,7 @@ Typical hands include:
 #### Super Accepts
 
 <BiddingTree>
-1!n - 2red
+1!n - 2!d/!h
 - 2M: Normal Accept
 - 2!n: Max. 4+M. No weak doubleton
 - Suit: Max. 4+M. Weak doubleton in suit
@@ -442,7 +442,7 @@ Long suit slam tries (Minor) and continuation
 </BiddingTree>
 
 <BiddingTree>
-1!n (2!n = Minors)
+1!n (2!n=Minors)
 - Dbl: Values. Further Dbls are penalties
 - 3!c: Ask 4+ majors. Smolen after 3!d
 - 3!d/!h: Transfer. 5+!h/5+!s. Inv+
@@ -513,7 +513,7 @@ Long suit slam tries (Minor) and continuation
 2m (Dbl)
 - P: Non-descriptive
 - Rdbl: Our board. New suit net round is F1
-- Jump shift: Pre
+- JS: Pre
 - 2!n: Inv with support. New suit shows shortness
 </BiddingTree>
 
@@ -522,8 +522,8 @@ Long suit slam tries (Minor) and continuation
 - Dbl: (up to 3!d) Negative. 
     - Unbid M: 3-card M. 
     - 2!n: 5431 or 6331 with stop in overcalled suit
-- Dbl: (above 3!h) Optional
-- New suit: Constructive
+- Dbl: (from 3!h) Optional
+- NS: Constructive
 - 2!n: F1. Bal inv or GF with m support
 - Cue: Ask stopper. May stop at 4m
 </BiddingTree>
