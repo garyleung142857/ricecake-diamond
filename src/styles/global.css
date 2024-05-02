@@ -14,7 +14,6 @@
 /* Light mode colors. */
 :root[data-theme='light'] {
 	--sp-symbol: #0000cc;
-	--sp-symbol: #6666ff;
 	--he-symbol: #ff0033;
 	--di-symbol: #ff6600;
 	--cl-symbol: #009900;
