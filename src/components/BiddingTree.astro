@@ -26,19 +26,22 @@ const breakCalls = () => (tree: any) => {
         if (node.tagName !== 'li') return CONTINUE
         
         const colonIndex = node.children.findIndex(c => c.value?.indexOf(':') > -1)
-        if (colonIndex === -1) return CONTINUE
-        let texts = node.children[colonIndex].value.split(':', 2)
-        let newChildren = [
-            h('text', texts[1].trimStart()),
-            ...node.children.slice(colonIndex + 1)
-        ]
-        
-        newChildren = [
-            h('span.tree-call', node.children.slice(0, colonIndex).concat(h('text', texts[0]))),
-            h('div.tree-def', newChildren)
-        ]
+        let texts: string
+        if (colonIndex === -1) {
+            node.children = [
+                h('span.tree-def', node.children),
+            ]
+        } else {
+            texts = node.children[colonIndex].value.split(':', 2)
 
-        node.children = newChildren
+            node.children = [
+                h('span.tree-call', node.children.slice(0, colonIndex).concat(h('text', texts[0]))),
+                h('div.tree-def', [
+                    h('text', texts[1].trimStart()),
+                    ...node.children.slice(colonIndex + 1)
+                ])
+            ]
+        }
     })
 }
 
