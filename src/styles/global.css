@@ -1,7 +1,14 @@
 :root{
 	--sl-line-height: 1.5;
 	--sl-font: 'Noto Sans Serif', sans-serif;
+	.spsymbol, .hesymbol, .disymbol, .clsymbol, .ntsymbol {
+		display: inline-flex;
+		width: 1em;
+		justify-content: center;
+	}
 }
+
+
 
 /* Dark mode colors. */
 :root {

@@ -9,26 +9,24 @@ sidebar:
 import BiddingTree from '/src/components/BiddingTree.astro'
 import { Aside } from '@astrojs/starlight/components'
 
-Used in the following situations (where 3N is likely bal, but unnecessary):
-- 1!c (Bid) 3N
-- 1!d (Bid) 3N
-- 1!d (Bid) P (P); 3N
-- (Bid) 3N
-- (Bid) P (P) 3N
+Used in the following situations (where 3!n is likely bal, but unnecessary):
+- 1!c (Bid) 3!n
+- 1!d (Bid) 3!n
+- 1!d (Bid) P (P); 3!n
+- (Bid) 3!n
+- (Bid) P (P) 3!n
 
 <BiddingTree>
 3!n
 - P: To play. Non-descriptive
-- 4!c: Puppet to 4!d
-    - 4!d Forced
-        - 4!h: RKCB in !c
-        - 4!s: RKCB in !d
-        - 4!n: RKCB in !h
-        - 5!c: Both minors. NF
-- 4!d: Puppet to 4!h.
-    - 4!h: Forced
-        - P/4!s/5m: To play
-        - 4!n: RKCB in !s
+- 4!c: Puppet to 4!d, then
+    - 4!h: RKCB in !c
+    - 4!s: RKCB in !d
+    - 4!n: RKCB in !h
+    - 5!c: Both minors. NF
+- 4!d: Puppet to 4!h, then
+    - P/4!s/5m: To play
+    - 4!n: RKCB in !s
 - 4M: Natural SI. NF
 - 4!n: Bal SI
 - 5m: Natural SI. NF

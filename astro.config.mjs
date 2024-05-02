@@ -6,7 +6,8 @@ import { escapeSymbol } from '/src/escapeSymbol'
 export default defineConfig({
     integrations: [
         starlight({
-            title: 'Rice Cake Diamond',
+            title: 'Rice Cake ♦',
+            description: 'Comnpetitive Bridge Bidding System',
             sidebar: [
                 {
                     label: 'Introduction',
