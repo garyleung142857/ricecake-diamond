@@ -13,6 +13,7 @@ export default defineConfig({
             social: {
 				github: 'https://github.com/garyleung142857/ricecake-diamond',
 			},
+            favicon: '/favicon.ico',
             sidebar: [
                 {
                     label: 'Introduction',

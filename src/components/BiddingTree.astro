@@ -7,7 +7,7 @@ const bodyHtml = await Astro.slots.render('default')
 const breakCalls = () => (tree: any) => {
     visit(tree, 'element', (node: any) => {
         if(node.tagName === 'p') {
-            node.tagName = 'h5'
+            node.tagName = 'span'
             if (node.properties.class == undefined) {
                 node.properties.class = ['tree-stem']
             } else {
