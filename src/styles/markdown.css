@@ -4,10 +4,6 @@
 	margin-top: 1em;
 }
 
-a:link {
-	text-decoration: none;
-}
-
 .spsymbol {
 	color: var(--sp-symbol);
 }
@@ -24,15 +20,9 @@ a:link {
 	color: var(--cl-symbol);
 }
 
-.ntsymbol {
+/* .ntsymbol {
 	color: var(--nt-symbol);
-}
-
-.spsymbol, .hesymbol, .disymbol, .clsymbol, .ntsymbol {
-	display: inline-flex;
-	width: 1.5ch;
-	justify-content: center;
-}
+} */
 
 .bidding-tree {
     padding: 10px;
