@@ -4,7 +4,7 @@ description: A competitive Bridge Bidding System
 tableOfContents: false
 ---
 
-import { CardGrid, Card } from '@astrojs/starlight/components';
+import { CardGrid, Card, LinkCard } from '@astrojs/starlight/components';
 
 <b>Rice Cake Diamond</b> bridge bidding system is suitable for you if you like:
 
@@ -23,15 +23,17 @@ import { CardGrid, Card } from '@astrojs/starlight/components';
     </Card>
 </CardGrid>
 
-<Card title="Notable references used in the system:" icon="document">
-- [Magic Diamond Light](http://www.brenning.se/pp/MagicDlight.pdf) by Sven-Olov Flodqvist and Tomas Brenning
-    - Strong influence on system structure
-- [Infernal Machine](https://usbf.org/docs/2019usbc/acblcards/2019_USBF_Open_USBC_Dinkin_Shuster_System_Notes.pdf) by Sam Dinkin
-    - Inspiration on continuations of cornerstone bids
-- [Competitive Bids the Scanian Way](http://www.itbolaget.nu/bridge/competitivebids.asp) by Mats Nilsland
-    - Inspiration on competitive sequence developments
-- [Heeman](https://www.jackbridge.com/pdf/eheeman.pdf) by Wim Heemskerk
-    - Inspiration on 1NT system
-- [KK Relay](https://www.bridgeworld.com/pages/bookstore/itemdetailpages/itemdetailpage_2320.html) by Karen McCallum and Kit Woolsey
-    - Reference for symmetric relay
-</Card>
+---
+
+<CardGrid>
+    <LinkCard 
+        title="Get Started"
+        href="/ricecake-diamond/introduction/opening/"
+        description="Description about the system"
+    />
+    <LinkCard
+        title="References"
+        href="/ricecake-diamond/reference/notable-reference/"
+        description="Notable reference used in the system"
+    />
+</CardGrid>
