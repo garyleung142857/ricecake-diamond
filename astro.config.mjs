@@ -26,6 +26,10 @@ export default defineConfig({
                 {
                     label: 'Defence',
                     autogenerate: {directory: 'defence'},
+                },
+                {
+                    label: 'Reference',
+                    autogenerate: {directory: 'reference'},
                 }
             ],
             customCss: [
