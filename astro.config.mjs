@@ -6,14 +6,14 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://garyleung142857.github.io/',
-    base: 'ricecake-diamond/junior',
+    site: 'https://ricecake-diamond-junior.netlify.app/',
+    base: '',
     integrations: [
         starlight({
             title: 'Rice Cake ♦ Junior',
             description: 'Comnpetitive Bridge Bidding System',
             social: {
-				github: 'https://github.com/garyleung142857/ricecake-diamond/junior',
+				github: 'https://github.com/garyleung142857/ricecake-diamond',
 			},
             favicon: '/favicon.ico',
             sidebar: [
