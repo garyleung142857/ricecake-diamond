@@ -1,7 +1,7 @@
-# Rice Cake Diamond
+# Rice Cake Diamond - Junior
 
 A competitive bridge bidding system
 
-Documented on a GitHub page built with [Astro Starlight](https://starlight.astro.build/).
+Simpler version for busy people.
 
-Visit the [system page](https://garyleung142857.github.io/ricecake-diamond/) for more information.
+Documented on a GitHub page built with [Astro Starlight](https://starlight.astro.build/).
