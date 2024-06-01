@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { escapeSymbol } from '/src/escapeSymbol'
+import { escapeSymbol } from '/src/escapeSymbol';
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -42,5 +44,7 @@ export default defineConfig({
     ],
     markdown: {
         rehypePlugins: [escapeSymbol]
-    }
+    },
+    output: "server",
+    adapter: netlify(),
 });
