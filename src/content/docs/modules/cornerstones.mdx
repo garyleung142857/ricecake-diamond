@@ -28,7 +28,7 @@ import { Aside } from '@astrojs/starlight/components'
     - 2!n: 6+!h 5=m. Then minors are P/C
     - 3m: 5+!h 6+X
     - 3!h: 6+!h Max
-- 2!c: Art. GF. [Relay](/modules/relay#relaying-1m-cornerstones)
+- 2!c: Art. GF. [Relay](#2-gf-relay)
 - 2!d: Art. 3+!h Inv to game value. [Spiral raise](/modules/spiral-raises/)
 - 2!h: Wide range raise. [Spiral raise](/modules/spiral-raises/)
 - 2!s/3m: 6+ suit. inv
@@ -43,7 +43,7 @@ import { Aside } from '@astrojs/starlight/components'
 <BiddingTree>
 1!s Cornerstone
 - 1!n: NF. 
-- 2!c: Art. GF. [Relay](/modules/relay#relaying-1m-cornerstones)
+- 2!c: Art. GF. [Relay](#2-gf-relay)
 - 2!d: Art. 5+!h F1. Either 6+!h constructive (no 3=!s) or 5=!h inv+. No slam
     - 2!h: No 3=!h / 5=!s. Any strength. May have 5m if min
         - P: 6+!h. To play
@@ -68,6 +68,8 @@ import { Aside } from '@astrojs/starlight/components'
 - 4!s: To play. Either way
 </BiddingTree>
 
+### Continuation After NT Response
+
 <BiddingTree>
 1M - 1!n; 2m
 - 2oM: Fit m, fragment raise in oM
@@ -86,6 +88,30 @@ import { Aside } from '@astrojs/starlight/components'
 - 4m: Nat. Not suitabke for NT
 </BiddingTree>
 
+### 2!c GF Relay
+
+<BiddingTree>
+1M - 2!c
+- 2!d: 4=M. 2M ask.
+    - 2!s: (After 1!h) =44(41)
+    - 2!n: 5+!c. 3!c Ask
+        - 3!d: 6+!c. 3!h Ask Hi / lo short
+        - 3!h/!s/!n: 5=!c Hi / lo / no short
+    - 3!c: 5=!d. 3!d ask short (hi / lo / no)
+    - 3!d: 6+!d. 3!h Ask Hi / lo short
+    - 3!h: (After 1!s) =44(41)
+    - 3M: Art. 4441 short oM
+- 2M: 5+M no 4oM. With 6+M or some short (Same shape as 2M opening)
+    - 2!n: Ask. Continuation see [2M intermediate opening](/introduction/development/#2M%20-%202N)
+- 2oM: 5+M 4=oM. 2!n Ask
+    - 3m: Fragment
+    - 3!h/!s: 6+M 4=oM Doubleton !c / !d
+- 2!n: 5M332 or 5M4m22
+- 3X: Nat. 5+M 5+X
+- 3M: Solid suit. Set trump unless immediate NT by asker
+</BiddingTree>
+
+Responder breaking relay is natural.
 ### 1M Contested Auction
 
 <BiddingTree>
@@ -251,7 +277,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 - 2!n: Art. 5+M 4+!c GF
     - 3!c: Ask
         - 3!d: 5+!c. 3!h Ask Hi / lo short
-        - 3!h/!s/!n: Hi / lo / no short
+        - 3!h/!s/!n: 4=!c. Hi / lo / no short
 - 3!c: Art. 5+M 4=!d GF. 3!d ask short (hi / lo / no)
 - 3!d: Art. 5+M 5+!d GF. 3!h Ask Hi / lo short
 - 3M: 6+M Inv
@@ -473,7 +499,7 @@ Long suit slam tries (Minor) and continuation
 <BiddingTree>
 2!c Cornerstone
 - 2!d: 5+!h F1
-- 2!h: Art. GF [Relay](/modules/relay#relaying-2m-cornerstones)
+- 2!h: Art. GF. [Ask](#2%E2%99%A6%20-%202%E2%99%A5)
 - 2!s: 5+!s F1
 - 2!n: Good !c raise. (Don't pass without a good reason)
 - 3!c: Blocking
@@ -483,7 +509,7 @@ Long suit slam tries (Minor) and continuation
 
 <BiddingTree>
 2!d Cornerstone
-- 2!h: Art. GF [Relay](/modules/relay#relaying-2m-cornerstones)
+- 2!h: Art. GF. [Ask](#2%E2%99%A6%20-%202%E2%99%A5)
 - 2!s: 5+!s F1
 - 2!n: 5+!h F1
 - 3!c: Good !d raise
@@ -491,6 +517,18 @@ Long suit slam tries (Minor) and continuation
 - 3!n: To play
 </BiddingTree>
 
+<BiddingTree>
+2!d - 2!h
+- 2!s: 4+om. Any strength
+    - 2!n/3m: Inv
+    - 3!h/!s: GF. Fit !c/!d
+    - 3!n. To play
+- 2!n: Max GF. Suitable for NT
+- 3om: Art. Max GF. Not suitable for NT
+- 3m: Min. 6+m
+- 3M: Max. Short M. Good suit
+- 3!n: AKQTxx+ in m. No M short
+</BiddingTree>
 ### 2m Contested Auction
 
 <BiddingTree>
