@@ -5,13 +5,13 @@ import { escapeSymbol } from '/src/escapeSymbol'
 // https://astro.build/config
 export default defineConfig({
     site: 'https://garyleung142857.github.io/',
-    base: 'ricecake-junior',
+    base: 'ricecake-diamond/junior',
     integrations: [
         starlight({
             title: 'Rice Cake ♦ Junior',
             description: 'Comnpetitive Bridge Bidding System',
             social: {
-				github: 'https://github.com/garyleung142857/ricecake-junior',
+				github: 'https://github.com/garyleung142857/ricecake-diamond/junior',
 			},
             favicon: '/favicon.ico',
             sidebar: [
