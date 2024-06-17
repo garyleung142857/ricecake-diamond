@@ -22,6 +22,10 @@ export default defineConfig({
                     autogenerate: {directory: 'introduction'},
                 },
                 {
+                    label: 'Opening and CS',
+                    autogenerate: {directory: 'openings'}
+                },
+                {
                     label: 'Modules',
                     autogenerate: {directory: 'modules'},
                 },

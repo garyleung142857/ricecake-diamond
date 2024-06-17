@@ -1,186 +1,20 @@
 ---
-title: Cornerstone Developments
-description: Developments of cornerstones
+title: 1N CS Openings
+description: 1N CS Openings Description
 sidebar:
-    label: Cornerstone Developments
-    order: 1
+    label: 1N CS Openings
+    order: 4
 ---
 
 import BiddingTree from '/src/components/BiddingTree.astro'
-import { Aside } from '@astrojs/starlight/components'
+import { Aside } from '@astrojs/starlight/components';
 
-## 1M Cornerstones
 
-<BiddingTree>
-1!h Cornerstone
-- 1!s: F1. No slam
-    - 1!n: 5=!h. no 3+!s or 5+m. Natural Continuation
-    - 2m: 5+m (2!c can be =1444)
-    - 2!h: 6+!h or good 5=!h
-    - 2!s: 3+!s
-        - 2!n: 4=!s Inv
-        - 3m/!h: 5+!s Help suit inv
-        - 3!s: Blocking
-    - 2!n: 6+!h 3=!s Max
-    - 3X: Nat Max
-- 1!n: NF. Can hide 4=!s if bal
-    - P: To play. 4441, 5332, 54xx
-    - 2m: 5+m [Continuation](#1M%20-%201N%3B%202m)
-    - 2!h: 6+!h or good 5=!h
-    - 2!s: 5+!h 5+!s Max
-    - 2!n: 6+!h 5=m. Then minors are P/C
-    - 3m: 5+!h 6+X
-    - 3!h: 6+!h Max
-- 2!c: Art. GF. [Relay](#2-gf-relay)
-- 2!d: Art. 3+!h Inv to game value. [Spiral raise](/modules/spiral-raises/)
-- 2!h: Wide range raise. [Spiral raise](/modules/spiral-raises/)
-- 2!s/3m: 6+ suit. inv
-- 2!n: Nat misfit inv. Any bid is GF. [Continuation](#1M%20-%202N%3B%203m)
-- 3!h: Preempt. (4)5+!h
-- 3!s/4m: Fragment raise
-- 3!n/4M: To play
-</BiddingTree>
+Strengths in Mode 0:
+- NV: 10-13
+- V: 14-16
 
-<BiddingTree>
-1!s Cornerstone
-- 1!n: NF. 
-- 2!c: Art. GF. [Relay](#2-gf-relay)
-- 2!d: Art. 5+!h F1. Either 6+!h constructive (no 3=!s) or 5=!h inv+. No slam
-    - 2!h: 2-!h Catch all.
-        - P: 6+!h. To play
-        - 2!s/!n/3X: Nat inv
-    - 2!s/2!n/3!n: 6+!s 1-!h/2=!h/3=!h. Max
-    - 3m: 4=!s 2=!h 5+m Max
-    - 3!h: !h fit. Min
-    - 3!s: Good 6+!s Max
-    - 4m: Fit !h Splinter
-    - 4!h: To play
-- 2!h: Art. 3+!s Inv to game value. [Spiral raise](/modules/spiral-raises/)
-- 2!s: Wide range raise. [Spiral raise](/modules/spiral-raises/)
-- 2!n: Nat misfit inv. [Continuation](#1M%20-%202N%3B%203m)
-- 3m: 6+ suit. inv
-- 3!h/4m: Fragment raise
-- 3!s: Preempt. (4)5+!s
-- 3!n/4M: To play
-</BiddingTree>
-
-### Continuation After NT Response
-
-<BiddingTree>
-1M - 1!n; 2m
-- 2oM: Fit m, fragment raise in oM
-- 2M: Fit m, fragment raise in om
-- om: Nat Inv
-- 2!n: Nat Inv
-- 3m: Courtesy raise
-</BiddingTree>
-
-<BiddingTree>
-1M - 2!n; 3m
-- 3oM: Fit m, fragment raise in oM
-- 3M: Fit m, fragment raise in om
-- om: Fit m. Need fitting honor in om
-- 3!n: To play
-- 4m: Nat. Not suitabke for NT
-</BiddingTree>
-
-### 2!c GF Relay
-
-<BiddingTree>
-1M - 2!c
-- 2!d: 4=M. 2M ask.
-    - 2!s: (After 1!h) =44(41)
-    - 2!n: 5+!c. 3!c Ask
-        - 3!d: 6+!c. 3!h Ask Hi / lo short
-        - 3!h/!s/!n: 5=!c Hi / lo / no short
-    - 3!c: 5=!d. 3!d ask short (hi / lo / no)
-    - 3!d: 6+!d. 3!h Ask Hi / lo short
-    - 3!h: (After 1!s) =44(41)
-    - 3M: Art. 4441 short oM
-- 2M: 5+M no 4oM. With 6+M or some short (Same shape as 2M opening)
-    - 2!n: Ask. Continuation see [2M intermediate opening](/introduction/development/#2M%20-%202N)
-- 2oM: 5+M 4=oM. 2!n Ask
-    - 3m: Fragment
-    - 3!h/!s: 6+M 4=oM hi / lo short
-- 2!n: 5M332 or 5M4m22
-- 3X: Nat. 5+M 5+X
-- 3M: Solid suit. Set trump unless immediate NT by asker
-</BiddingTree>
-
-Responder breaking relay is natural.
-### 1M Contested Auction
-
-<BiddingTree>
-1M (Dbl)
-- P: Non descriptive. Later Dbl is competitive
-- Rdbl: Our board. Interested in penalizing opponents. Forcing to 2M
-- 1!n: Art. 3=M support. =Inv
-    - P: To play
-    - 2 any: NF
-    - 3 any: GF
-- 2M: 3+M support. Wide range. Less than invite. [Spiral Raise](/modules/spiral-raises/)
-- Suit: Expected to be competitive, but can be weaker. NF
-- 2!n: 4+M. Limit raise+. Only 3M is NF
-- JS: Preemptive
-</BiddingTree>
-
-<BiddingTree>
-1M (Suit bid)
-- Dbl: (up to 3!d) Negative. Asks partner for unbid 4-card major or the longest suit
-    - 2!n: 5+5+ in M and lowest unbid suit. Non-min
-    - Cue: 5+5+ in M and highest unbid suit. Non-min
-    - JS: usually 6+. Non-min
-- Dbl: (from 3!h) Optional
-- NS: NF
-- JS: GF
-- Raise: Wide range
-- 3M: Pre
-- 4M: To play. Either way
-- Cue: Inv+ 4+ support
-- 2!n: Bal inv
-</BiddingTree>
-
-<BiddingTree>
-1M (1!n)
-- P: Non-descriptive
-- Dbl: Optional. Correctable on offensive hands
-- 2m: Competitive. NF
-- 2M: Wide range. [Spiral raise](/modules/spiral-raises/)
-- 2!n: 4+ support. Only 3M is NF
-- 3X: Preemptive
-</BiddingTree>
-
-<BiddingTree>
-1M (Michale / U2NT)
-- Dbl: Optional
-- Cue low: GF 5+ in 4th suit
-- Cue high: Fit M. Inv+
-- 3M: Competitive
-- 4th suit: Constructive NF
-</BiddingTree>
-
-### Modified Drury
-
-Used in Mode 3
-
-<BiddingTree>
-P - 1M
-- 2!c: 8-10 Bal 2=M
-    - P/2m/2M: To play
-    - 2oM/2!n: Nat inv
-    - 3m: Canape. GF
-    - 3oM: Nat GF
-    - 3M: 6+M Inv
-    - 3!n/4M: Inv
-- 2!d: 8-10 Bal 3-4M
-    - 2M: To play
-    - 2oM/2!n: Inv
-    - 3m: Canape GF
-    - 3M: Art. Choice of 3!n / 4M
-    - 3!n/4M: To play. Not correctable
-</BiddingTree>
-
-## 1!n Cornerstone
+May have 5-card major or 6-card minor
 
 <BiddingTree>
 1!n
@@ -211,7 +45,7 @@ P - 1M
 - 4!n: Quantitative
 </BiddingTree>
 
-### 2!c Puppet to 2!d
+## 2!c Puppet to 2!d
 
 <BiddingTree>
 1!n - 2!c; 2!d
@@ -226,7 +60,7 @@ P - 1M
 - 3!s+: 6+!d [SI](#long-suit-slam-tries)
 </BiddingTree>
 
-#### Majors Invite (Keri)
+### Majors Invite (Keri)
 
 <Aside type="note">
 If the responder is flat with one 4-card major, go through 1!n - 2!s.
@@ -247,7 +81,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 - 3!n/4M: To play
 </BiddingTree>
 
-#### Both minors GF
+### Both minors GF
 <BiddingTree>
 1!n - 2!c; 2!d - 2!n; 3!c
 - 3!d: Long !d inv
@@ -263,9 +97,9 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 - 4!h/!s: 6+!c/!d 5+om
 </BiddingTree>
 
-### 2!d/!h Transfers
+## 2!d/!h Transfers
 
-#### Normal Accepts
+### Normal Accepts
 
 <BiddingTree>
 1!n - 2!d/!h; 2M
@@ -284,7 +118,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 - 3oM/4!c+: [Long M ST](#long-suit-slam-tries)
 </BiddingTree>
 
-#### Super Accepts
+### Super Accepts
 
 <BiddingTree>
 1!n - 2!d/!h
@@ -296,7 +130,7 @@ If the responder is flat with one 4-card major, go through 1!n - 2!s.
 
 After super accepts, no re-transfer except n immediate 4!d / 4!h.
 
-### 2!s Size Ask
+## 2!s Size Ask
 
 <BiddingTree>
 1!n - 2!s
@@ -310,7 +144,7 @@ After super accepts, no re-transfer except n immediate 4!d / 4!h.
     - 3!n: To play, either bal inv or long !c inv
 </BiddingTree>
 
-#### Confit
+### Confit
 
 Responder has a balanced hand, investigates the number of controls and a fit for a slam.
 
@@ -337,7 +171,7 @@ Then the development follows the following rules:
 - Both players bids suits up the line, rebidding shows 5
 - Fit partner by a raise
 
-### 2!n Transfer to 3!c
+## 2!n Transfer to 3!c
 
 <BiddingTree>
 1!n - 2!n; 3!c
@@ -347,7 +181,7 @@ Then the development follows the following rules:
 - 3!s+: 6+!c [SI](#long-suit-slam-tries)
 </BiddingTree>
 
-### 3!c 5+!s 4=!h Game Force
+## 3!c 5+!s 4=!h Game Force
 
 <BiddingTree>
 1!n - 3!c
@@ -359,7 +193,7 @@ Then the development follows the following rules:
 - 3!n: Not interested in a major
 </BiddingTree>
 
-### 3!d 4-4 Majors GF
+## 3!d 4-4 Majors GF
 <BiddingTree>
 1!n - 3!d
 - 3M: Fit M. Not the worst hand
@@ -371,9 +205,9 @@ Then the development follows the following rules:
 - 4M: Fit M. NF
 </BiddingTree>
 
-### Modules
+## Modules
 
-#### Major-Minor Game Forcing
+### Major-Minor Game Forcing
 
 After responder shows 5M 4+m after 1!n - 2!d/!h; 2!h/!s - 2!n/3!c/3!d; shape ask, opener can continue as follows
 
@@ -393,7 +227,7 @@ After responder shows 4=M 5+m after 1!n - 2!c/2!n; 2!d/3!c - 3!d/3!h, opener can
 - 3!s/4m: Fit m.
 </BiddingTree>
 
-#### Long Suit Slam Tries
+### Long Suit Slam Tries
 
 After a transfer to a suit, responder can initiate long suit ST by bidding 3!s (or 3!h after !s), 3!n in a minor, or 4-level bids.
 
@@ -424,7 +258,7 @@ Long suit slam tries (Minor) and continuation
 - 4X: Splinter
 </BiddingTree>
 
-### 1!n Contested Auction
+## 1!n Contested Auction
 
 <BiddingTree>
 1!n (Dbl) / 1!n (P) P (Dbl)
@@ -495,61 +329,4 @@ Long suit slam tries (Minor) and continuation
 - P: No fit (Responder double to re-puppet)
 - Rdbl: Max with length in the doubled suit
 - Complete: Fit
-</BiddingTree>
-
-## 2m Cornerstones
-
-<BiddingTree>
-2!c/!d Cornerstones
-- 2!d/3!c: (Other minor) Art. 5+!h F1
-- 2!h: Art. Inv+ [Ask](#2m%20-%202%E2%99%A5). Some !c tolerance if only inv
-- 2!s: 5+!s F1
-- 2!n: Misfit inv. (May have long !d)
-- 3m: Blocking
-- 3X: Inv 6+X
-- 3!n: To play
-</BiddingTree>
-
-<BiddingTree>
-2m - 2!h
-- 2!s: 4+om. Any strength
-    - 2!n/3m: Inv
-    - 3!h/!s: GF. Fit !c/!d
-    - 3!n: To play
-- 2!n: Max GF. Suitable for NT
-- 3om: Art. Max GF. Not suitable for NT
-- 3m: Min. 6+m
-- 3M: Max. Short M. Good suit
-- 3!n: AKQTxx+ in m. No M short
-</BiddingTree>
-
-### 2m Contested Auction
-
-<BiddingTree>
-2m (Dbl)
-- P: Non-descriptive
-- Rdbl: Our board. New suit next round is F1
-- NS: Constructive. NF
-- JS: Pre
-- 2!n: Inv with support. New suit shows shortness
-</BiddingTree>
-
-<BiddingTree>
-2m (Suit bid)
-- Dbl: (up to 3!d) Negative. 
-    - Unbid M: 3-card M. 
-    - 2!n: Nat. stop in overcalled suit
-- Dbl: (from 3!h) Optional
-- NS: Constructive. NF
-- 2!n: F1. Bal inv or GF with m support
-- Cue: Ask stopper. May stop at 4m
-</BiddingTree>
-
-### 2m Passed Response
-
-Used in Mode 3
-<BiddingTree>
-P - 2m
-- New suit: 5-7 5+ suit. Tolerance in m
-- 2!n: 8-10 Bal. Inv
 </BiddingTree>
