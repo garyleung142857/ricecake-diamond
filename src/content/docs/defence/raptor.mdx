@@ -1,0 +1,57 @@
+---
+title: Raptor 1N / 2N
+description: Raptor Overcall Continuation
+sidebar:
+    label: Raptor Overcall
+    order: 6
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+Used in Mode 3 (After 1!c - 1!d) where opener does not in a range for natural NT
+- Vul: 1!c - 1!d; (Dbl / 1M) - 1!n
+- 1!c - 1!d; (2X) - 2!n
+
+Raptor overcall shows 4=M (or poor 5M) and 5+m. Offensive hand. There is always one anchor suit.
+
+## Raptor 1!n
+
+<BiddingTree>
+...(Opp showed a minor) Raptor 1!n
+- 2m: NF
+- 2Cue: Ask M. May be weak, but bidding again shows interest in game.
+- 2M: Own suit. NF. Should raise with 4
+- 2!n: LR+ in known minor
+</BiddingTree>
+
+<BiddingTree>
+...(Opp showed a major) Raptor 1!n
+- 2m: P/C
+- 2M: NF
+- 2Cue: Good M raise
+- 2!n: Inv+. Ask minor
+- 3m: Own suit. NF
+</BiddingTree>
+
+## Raptor 2!n
+
+<BiddingTree>
+...(Opp showed a minor) Raptor 2!n
+- 3m: NF
+- 3Cue: Ask M. May be weak, but bidding again is GF
+- 3M: Own suit. NF. Should raise with 4.
+- 3!n: To play
+- 4m: Preemptive
+- 4X: Fit m. GF
+</BiddingTree>
+
+<BiddingTree>
+...(Opp showed a major) Raptor 2!n
+- 3m: P/C
+- 3M: NF. Not promise 8-card fit
+- 3Cue: Ask minor. GF (3!n=!d. 3!s/4!c=!c)
+- 3!n: To play
+- 4X: Fit M. Cue
+- 4M: To play
+</BiddingTree>
