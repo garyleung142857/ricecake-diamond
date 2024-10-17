@@ -46,3 +46,9 @@
 	--cl-symbol: #009900;
 	/* --nt-symbol: #333333; */
 }
+
+@media print {
+	header, footer, nav {
+		display: none; 
+	}
+}
