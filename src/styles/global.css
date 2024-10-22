@@ -48,7 +48,11 @@
 }
 
 @media print {
+	.main-frame{
+		padding-top: 0 !important;
+		padding-inline-start: 0 !important;
+	}
 	header, footer, nav {
-		display: none; 
+		display: none;
 	}
 }
