@@ -49,8 +49,14 @@
 
 @media print {
 	.main-frame{
+		padding: 0 !important;
+	}
+	.bidding-tree ul {
+		display: inline;
+	}
+	.bidding-tree {
 		padding-top: 0 !important;
-		padding-inline-start: 0 !important;
+		padding-bottom: 0 !important;
 	}
 	header, footer, nav {
 		display: none;
