@@ -2,8 +2,6 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { escapeSymbol } from '/src/escapeSymbol';
 
-import netlify from "@astrojs/netlify";
-
 // https://astro.build/config
 export default defineConfig({
     site: 'https://garyleung142857.github.io/',
