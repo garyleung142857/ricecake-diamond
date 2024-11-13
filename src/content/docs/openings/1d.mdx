@@ -1,0 +1,108 @@
+---
+title: 1♦ Strong Opening
+description: 1♦ Strong Opening Description
+sidebar:
+    label: 1♦ Strong
+    order: 2
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components';
+
+
+17+ forcing.
+
+<BiddingTree>
+1!d
+- 1!h: 0-7 Catch all. See [continuation](#1%E2%99%A6%20-%201%E2%99%A5)
+- :Others 8+ GF [Relay](/ricecake-diamond/modules/relay/#answering-strong-1-opening)
+- 1!s: Either 4+!h unbal or 8-11 (4333) / (4432) / 5m(332)
+- 1!n: 12-14 Bal (including 5332)
+- 2!c: 4+!s unbal (no 4+!h)
+- 2!d: 5+!c unbal or 3-suiters short major
+- 2!h: 5+!d unbal
+- 2!s: 8-11 5!h(332)
+- 2!n/3m: 8-11 5!s(332). Zoom to doubleton
+</BiddingTree>
+
+<Aside type="note">
+Continuation for 1!s+ positive bids see [Relay](/ricecake-diamond/modules/relay/#answering-strong-1-opening) section.
+</Aside>
+
+<BiddingTree>
+1!d - 1!h
+- 1!s: Art. 22+ unbal, or 20-21 / 25+ Bal, or 17-21 5+4+ majors
+    - 1!n: Art. 0-4 with 5+ suit
+        - 2!c: P/C. 20-21 bal
+        - 2!d: 17-21 5+4+ Majors
+            - P: Long !d. To play
+            - 2M: Preference
+            - 2N: Minors
+            - 3!c: Nat NF
+            - 3!d: Art. 3+3+ majors not trash
+            - 3M: blocking
+        - 2!h+: Nat F1. 2!n = 25+ bal
+        - 3M/!n: 5-5 minors. Short M / no small singleton
+    - 2!c: Art. 0-4 Bal / 4441
+        - 2!d: Ask better major. Either min with 5+4+ majors or 20-21 bal
+        - 2!h+: Nat F1. 2!n = 25+ bal
+    - 2!d: Art. 5-7 Bal / 4441. 2M F1. [2!n system on](/ricecake-diamond/modules/2nt-natural/)
+    - 2M/3m: Nat 5-7
+    - 2!n: 5-7 5-5 minors
+- 1!n: 17-19 Bal. [1!n development](/ricecake-diamond/openings/1n-cs/)
+- 2X: 17-21. Unbal 5+X NF
+- 2!n: 22-24 Bal. [2!n development](/ricecake-diamond/modules/2nt-natural/)
+- 3X: Nat. Good suit. GF
+</BiddingTree>
+
+## Interference
+
+<BiddingTree>
+1!d (Dbl or Bid)
+- P: NF. 0-5(7), or 6+HCP with opponent's shown suit
+- Dbl: 6+HCP. "Our board". No biddable 5-card suit or 8+ bal
+- Rdbl:	8+HCP. "We have game value". Focus on penalties. Probably with a balanced hand.
+- NS: 6+HCP. 5+card suit. F1
+- JS: Competitive. NF
+- Lowest NT: GF. Balanced hand. Good stopper in any shown suit
+- 2-level Cue: GF. Ask stopper if opp shown one suit; shows stopper if shown multiple suits
+- 3+level Cue: GF. Three suiter and short in the shown suit.
+</BiddingTree>
+
+### Continuation after 1!d (Dbl or Bid) Action
+- NS: Forcing if below game.
+- JS: Good suit and forcing if below game
+- Raises
+    - (by Opener) GF. Jump in opp's suit / 4-level shows shortness. 
+    - (by Responder) simple raise is NF (if not already GF).
+- Cue
+    - (by Opener) GF. Asks stopper.
+    - (by Responder) F1. Catchall
+- Simple NT: Nat. NF. System on
+- Jump NT: GF. System on
+
+### Fourth Hand Bids after we confirm this is our board
+- (After they raised)
+    - P: Tends to be bal. Forcing
+    - Dbl: T/O. Neutral if balancing position
+    - Suit: Shapeful GF; 4+ cards in balancing position
+    - NT: Good stop. NF
+- (After they bid a new suit)
+    - P: Forcing. Could be short
+    - Dbl: Penalty. Neutral if balancing position
+    - Suit: Shapeful GF. 4+ cards in balancing position
+    - NT: Good stop. NF
+
+### Continuation after Responder Denied Strength
+- Applies in the following sequences
+    - 1!d (Dbl/Bid) P (Bid/Pass)
+    - 1!d (P) 1!h (Dbl/Bid)
+- Follow above methods with additional below:
+    - 1!d (P) 1!h (Dbl), opener's Rdbl has "opposite meaning" as opp's Dbl.
+    - 1!d (Dbl) P (P). Rdbl is takeout in !d, or very strong
+    - Opener's jump to 2!n in the balancing position shows a strong 2-suiter
+
+## Opening Opposite Passed Hand
+
+Opener shows 20+. Responder is limited to 0-7 unbal or 0-10 Bal.
+Responder borrows 3 points from 1!d opener and continues as if direct opening.

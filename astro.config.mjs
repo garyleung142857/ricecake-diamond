@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { escapeSymbol } from '/src/escapeSymbol'
+import { escapeSymbol } from '/src/escapeSymbol';
+
+import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,6 +20,10 @@ export default defineConfig({
                 {
                     label: 'Introduction',
                     autogenerate: {directory: 'introduction'},
+                },
+                {
+                    label: 'Opening and CS',
+                    autogenerate: {directory: 'openings'}
                 },
                 {
                     label: 'Modules',

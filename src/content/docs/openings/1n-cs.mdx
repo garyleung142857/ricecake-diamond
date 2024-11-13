@@ -1,0 +1,316 @@
+---
+title: 1N CS Openings
+description: 1N CS Openings Description
+sidebar:
+    label: 1N CS Openings
+    order: 4
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components';
+
+
+Strengths in Mode 0:
+- NV: 10-13
+- V: 14-16
+
+May have 5-card major or 6-card minor
+
+<BiddingTree>
+1!n
+- 2!c: Puppet to 2!d. "5+!d any strength, both minors GF, or a major invite"
+    - (1): Weak in !d
+    - (2): Inv with long !d
+    - (3): Long !d SI
+    - (4): 5+!d 4=M GF
+    - (5): 5+4+ minors GF
+    - (6): Three suited short M SI, or
+    - (7): 4-5M inv (not 4-card flat)
+- 2!d: Trans to 2!h. 5+!h. Include 5-5 majors inv and 5+!h 4=!s GF
+- 2!h: Trans to 2!s. 5+!s. Not 5=!s inv
+- 2!s: Size ask.
+    - (1): Bal inv (may have a 4-card major if flat)
+    - (2): Bal SI, or
+    - (3): Inv with long !c
+- 2!n: Trans to 3!c
+    - (1): Weak in !c
+    - (2): 5+!c 4=M GF, or
+    - (3): Long !c SI
+- 3!c: 5+!s 4=!h GF
+- 3!d: 4=!h 4=!s GF
+- 3M: 4=M COG. Usually 3-oM. May pull to 5m after 3!n
+- 3!n: To play
+- 4!c/!d: Long !h/!s GF+
+- 4M: To play
+- 4!n: Quantitative
+</BiddingTree>
+
+## 2!c Puppet to 2!d
+
+<BiddingTree>
+1!n - 2!c; 2!d
+- P: Weak with !d
+- 2M: 4-5M inv. Not 4333 or 4432. [Keri](#majors-invite-keri)
+- 2!n: 5+!d GF (not both m)
+    - 3!c: Ask
+        - 3!d: 5+!d 4=!h [GF](#major-minor-game-forcing)
+        - 3!h: 5+!d 4=!s [GF](#major-minor-game-forcing)
+        - 3!s+: 6+!d [SI](#long-suit-slam-tries)
+- 3!c: 5+4+ minors GF.
+    - 3!d: Ask
+        - 3!h: Short !s. 5+4+ minors ST.
+            - 3!s: Ask better minor (3!n=!d, 4!c=!c)
+        - 3!s: Short !h. 5+4+ minors ST.
+            - 3!n: NF
+            - 4!c: Ask better minor (4!d=!d, 4!h+=!c and cue)
+            - 4!d: Fit !d
+            - 4!h+: Fit !c. Cue
+        - 3!n: 5-4 minors NF. 5422 or stiff honor. 4!c ask better minor
+        - 4m: 6m 4=om
+        - 4!h/!s: 6+!c/!d 5+om
+    - 3!h/!s: Fit !c/!d
+    - 3!n: To play
+- 3!d: Long !d inv
+- 3M: Three suited. Short oM
+</BiddingTree>
+
+### Majors Invite (Keri)
+
+<Aside type="note">
+If the responder has a 4-card major but flat, go through 1!n - 2!s.
+</Aside>
+
+<BiddingTree>
+1!n - 2!c; 2!d - 2M
+- P: Min. 3=M
+- 2!s: Min. 2=!h 4-5!s
+- 2!n: Min. 2=M
+    - 3m: 5+m to play
+    - 3!h: (After 2!s) 5=!s 4=!h
+- 3m: 4=M. Help suit game try in m
+- 3!h: Art. Max 4=oM. May have 3=M
+    - 3!s: 5=M
+    - 3!n/4oM: To play
+- 3!s: Art. Max 3=M COG (or dispersed strength with 4=M)
+- 3!n/4M: To play
+</BiddingTree>
+
+## 2!d/!h Transfers
+
+### Normal Accepts
+
+<BiddingTree>
+1!n - 2!d/!h; 2M
+- 2!s: 5-5 majors inv+ or 5+!h 4=!s GF. 2!n ask, then
+    - 3!c: 5+!h 4=!s GF. Continue like [1!n - 3!c](#1N%20-%203%E2%99%A3)
+    - 3!d: 5+!h 5+!s GF. Natural continuation
+    - 3!h: 5-5 majors inv
+- 2!n: Art. 5+M 4+!c GF
+    - 3!c: Ask
+        - 3!d: 5+!c. 3!h Ask Hi / lo short
+        - 3!h/!s/!n: 4=!c. Hi / lo / no short
+- 3!c: Art. 5+M 4=!d GF. 3!d ask short (hi / lo / no)
+- 3!d: Art. 5+M 5+!d GF. 3!h Ask Hi / lo short
+- 3M: 6+M Inv
+- 3!n: 5=M COG. Disperse values. 3!n is still possible even with fit
+- 3oM/4!c+: [Long M ST](#long-suit-slam-tries)
+</BiddingTree>
+
+### Super Accepts
+
+<BiddingTree>
+1!n - 2!d/!h
+- 2M: Normal Accept
+- 2!n: Max. 4+M. No weak doubleton
+- Suit: Max. 4+M. Weak doubleton in suit
+- 3M: 5=M
+</BiddingTree>
+
+After super accepts, no re-transfer except n immediate 4!d / 4!h.
+
+## 2!s Size Ask
+
+<BiddingTree>
+1!n - 2!s
+- 2!n: Min
+    - 3!c: Was long !c inv
+    - 3!d: [Confit](#confit)
+    - 3!n: To play
+- 3!c: Max
+    - 3!d: [Confit](#confit)
+    - 3M: 4=M. Was bal inv. Then 3!s is Nat.
+    - 3!n: To play, either bal inv or long !c inv
+</BiddingTree>
+
+### Confit
+
+Responder has a balanced hand, investigates the number of controls and a fit for a slam.
+
+<BiddingTree>
+1!n - 2!s; 2!n/3!c - 3!d
+- 3!h: 2-3 controls
+    - 3!s: Ask again
+        - 3!n: 2 controls
+        - 4!c: 3 controls, 4+ suits. Bid up the line
+    - 3!n: To play
+    - 4!c+: 4+ suits. Bid up the line
+- 3!s: 4 controls
+- 3!n: 5 controls
+- 4!c+: 6+ controls. 4+ suit. Bid up the line
+</BiddingTree>
+
+<Aside type="note">
+The number of control is based on 10-13 range. For 14-16 1!n, add one control to the requirements.
+</Aside>
+
+Then the development follows the following rules:
+- Any time the responder rebids NT, the opener must pass
+- The opener must not raise the level unless fitting
+- Both players bids suits up the line, rebidding shows 5
+- Fit partner by a raise
+
+## 2!n Transfer to 3!c
+
+<BiddingTree>
+1!n - 2!n; 3!c
+- P: Weak !c to play
+- 3!d: 5+!c 4=!h [GF](#major-minor-game-forcing)
+- 3!h: 5+!c 4=!s [GF](#major-minor-game-forcing)
+- 3!s+: 6+!c [SI](#long-suit-slam-tries)
+</BiddingTree>
+
+## 3!c 5+!s 4=!h Game Force
+
+<BiddingTree>
+1!n - 3!c
+- 3!d: Ask
+    - 3!h/!s: hi / lo short
+    - 3!n: 5422
+    - 4m: 6+!s short m
+- 3M: Fit
+- 3!n: Not interested in a major
+</BiddingTree>
+
+## 3!d 4-4 Majors GF
+<BiddingTree>
+1!n - 3!d
+- 3M: Fit M. Not the worst hand
+    - 3!n: Disperse values. MST
+    - 3m: Shortness. ST
+    - 4M: To play
+- 3!n: NF
+- 4m: Double fit. Cue
+- 4M: Fit M. NF
+</BiddingTree>
+
+## Modules
+
+### Major-Minor Game Forcing
+
+After responder shows 5M 4+m after 1!n - 2!d/!h; 2!h/!s - 2!n/3!c/3!d; shape ask, opener can continue as follows
+
+<BiddingTree>
+5+M 4+m continuation
+- 4m: SI in m.
+- 4om/oM: SI in M. Cuebid
+- 3N/4M/5m: NF
+</BiddingTree>
+
+After responder shows 4=M 5+m, opener can continue as follows
+
+<BiddingTree>
+5+m 4=M continuation
+- 3M: Fit M. May have m fit
+- 3!n: No fit. NF
+- 3!s/4m: Fit m.
+</BiddingTree>
+
+### Long Suit Slam Tries
+
+After a transfer to a suit, responder can initiate long suit ST by bidding 3!s (or 3!h after !s), 3!n in a minor, or 4-level bids.
+
+<BiddingTree>
+Long suit slam tries (Major) and continuation
+- 3oM:  ST. No short (may have singleton Ace / King)
+    - 4M: Negative
+    - 3!n: Ask weak doubleton (worse than Jx)
+        - 4m: m
+        - 4M: oM
+        - 4!n: No
+- 4X: Splinter
+- 4M: Mild ST. NF
+- 4!n: RKCB
+</BiddingTree>
+
+<BiddingTree>
+Long suit slam tries (Minor) and continuation
+- 3!s: ST. No short (may have singleton Ace / King) 
+    - 3!n: Negative
+    - 4m: Nat ST
+    - 4om: Ask weak doubleton (worse than Jx)
+        - 4!d / 5!c: (Original suit) om
+        - 4M: M
+        - 4!n: No
+- 3!n: Mild ST. NF
+- 4m: (Responder's suit) Kick back RKCB
+- 4X: Splinter
+</BiddingTree>
+
+## 1!n Contested Auction
+
+<BiddingTree>
+1!n (Dbl)
+- P: Ask for a 5-card suit. May be a strong hand
+    - P: No 5-card suit. To play
+    - Rdbl: Have a 5-card suit.
+        - P: To play 1!n redoubled
+        - 2!c: Weak. P/C
+- Rdbl: A 5+card suit. Puppet to 2!c, then P/C
+- 2!c/!d/!h: 4+4+ in the suit bid and a higher suit. P/C
+- 2!s: GF. 5+5+ in !s and another suit. 2!n asks for the second suit
+- 2!n: GF. 5+5+ minors
+- 3m: GF. 5+!h 5+m
+- Higher: System on
+</BiddingTree>
+
+<BiddingTree>
+1!n (P) P (Dbl)
+- P: No 5-card suit
+- Rdbl: A 5+card suit. Max. Then 2!c P/C
+- 2X: 5+X. Min.
+</BiddingTree>
+
+<BiddingTree>
+1!n (2X)
+- Lebensohl. Slow Show.
+- [Unusual vs unsusual](/ricecake-diamond/defence/others/#unusual-vs-unusual) if two known suits (4+4+) has been shown
+- Dbl: Take out if nat. Suit-showing if art
+- 4!c/!d: Long !h/!s GF
+- 4M: To play even if it is their suit
+</BiddingTree>
+
+<BiddingTree>
+1!n (2!n=Minors)
+- Dbl: Values. Further Dbls are penalties
+- 3!c/!d: 5+!h / 5+!s. GF
+- 3M: Nat. 6+M. Constructive. NF
+</BiddingTree>
+
+<BiddingTree>
+1!n (3X)
+- Refer to [Against Preempt or Raise](/ricecake-diamond/defence/raise-preempt/#vs-preempt--raise-to-3-level)
+</BiddingTree>
+
+<BiddingTree>
+1!n, then opponent doubles responder's puppet / asking bid
+- P: No stopper (Responder double to re-puppet)
+- Rdbl: Max with length in the doubled suit
+- Complete / answer: Stopper
+</BiddingTree>
+
+<BiddingTree>
+1!n, then opponent doubles responder's transfer bid
+- P: No fit (Responder double to re-puppet)
+- Rdbl: Max with length in the doubled suit
+- Complete: Fit
+</BiddingTree>
