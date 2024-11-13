@@ -44,3 +44,19 @@
 	--cl-symbol: #009900;
 	/* --nt-symbol: #333333; */
 }
+
+@media print {
+	.main-frame{
+		padding: 0 !important;
+	}
+	.bidding-tree ul {
+		display: inline;
+	}
+	.bidding-tree {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	header, footer, nav {
+		display: none;
+	}
+}
