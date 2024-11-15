@@ -66,6 +66,7 @@ Patterns with Single Shortage
 <BiddingTree>
 - The 5-card suit will be shown first.
 - Relay next step to show doubleton (hi / mid / lo)
+- Skip one step to directly go to control ask (treat it as 5333)
 </BiddingTree>
 
 ### Three suiters continuation
@@ -119,14 +120,16 @@ Patterns with Single Shortage
     - 2!d: 8-11 (4333) or (4432). 2!h ask => [Balanced](#balanced-continuation-4333-or-4432)
     - 2!h: 8-11 5m(332). 2!s ask
         - 2!n: [5!c332](#5332-continuation)
-        - 3!c+: [5!d332](#5332-continuation). zoom to doubleton
+        - 3!c: [5!d332](#5332-continuation)
     - 2!s: [Three suiter](#three-suiters-continuation) short minor
     - 2!n+: 5+4+ majors [Two Suiters](#two-suiters-continuation) (2!n = 5+!s 4=!h)
-- 1!n: 12-14 Bal (including 5332). 2!c relay
+- 1!n: 12-14 Bal (including 5332) or Solid 6+ card suit. 2!c relay
     - 2!d: (4333) or (4432). 2!h ask => [Balanced](#balanced-continuation-4333-or-4432)
     - 2!h: 5m(332). 2!s ask
-    - 2!s: 5!h(332). [5332](#5332-continuation)
-    - 2!n: 5!s332, zoom to doubleton
+    - 2!s: [5!h(332)](#5332-continuation)
+    - 2!n: [5!s(332)](#5332-continuation)
+    - 3X: Solid 6-card suit in X
+    - 4X: Solid 7+card suits in X
 - 2!c: 4+!s unbal (no 4+!h). 2!d ask
     - 2!h: 4+!s 4+!c. 2!s relay => [Two suiters](#two-suiters-continuation)
     - 2!s: 5+!s 4+!d. [Two suiters](#two-suiters-continuation) (non-reverser / long leg)
@@ -139,8 +142,9 @@ Patterns with Single Shortage
 - 2!h: 5+!d unbal. 2!s ask
     - 2!n: 5+!d 4=!c. [Two suiters](#two-suiters-continuation) (non-reverser)
     - 3!c+: 6+!d [One suiter](#one-suiter-continuation)
-- 2!s: 8-11 [5!h332](#5332-continuation)
-- 2!n/3m: 8-11 [5!s332](#5332-continuation). Zoom to doubleton
+- 2!s: 8-11 [5!h(332)](#5332-continuation)
+- 2!n: 8-11 [5!s(332)](#5332-continuation)
+- 3/4/5X: Long suit. Not solid. Nothing outside
 </BiddingTree>
 
 <Aside type="note">
