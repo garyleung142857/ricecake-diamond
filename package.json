@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^5.2.1",
-    "@astrojs/starlight": "^0.21.4",
-    "@fontsource/noto-sans": "^5.0.19",
-    "astro": "^4.3.5",
+    "@astrojs/starlight": "^0.21.5",
+    "@fontsource/noto-sans": "^5.0.22",
+    "astro": "^4.7.1",
     "hast-util-find-and-replace": "^5.0.1",
     "hastscript": "^9.0.0"
   }
