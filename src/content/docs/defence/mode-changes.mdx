@@ -1,0 +1,86 @@
+---
+title: Different Modes in Competitive Sequences
+description: Different Modes in Competitive Sequences
+sidebar:
+    label: Difference in Modes 
+    order: 7
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components';
+
+
+## General Rule when opponent bid
+
+Facing opponents' bid when we haven't bid / bid 1!c / bid 1!c - 1!d
+- Michael Cuebid (2X) is on if
+    - opponent has made a 1-level bid (or doubling 1!c to show !c), and
+    - bidder's partner can be 0 point
+- If Michael Cuebid is off, that cuebid means GF hand without a good suit to bid
+- 2NT is natural only after opponent opens (2M)
+- Unusual 2NT is on if Michael Cuebid is on and 2NT is not natural
+- Rubensohl is on if 
+    - 2NT is not natural, and
+    - Michael Cuebid is off, and
+    - intervention is below (exclude) 2N
+- Jump suit is preemptive if the bidder and his partner did not promise strength
+    - If the bidder promised strength, jump bids shows max and good suit
+    - If the bidder's partner promised strength, jump bids shows GF value and good suit (same if Rubensohl is on)
+
+### Examples
+
+<BiddingTree>
+1!c (1-suit=Nat, or Dbl=!c)
+- Dbl / Rdbl: 6-12. Takeout
+- 1N: 9-11. Bal. Does not promise stopper. System on
+- NJS: NF. Can be very weak since partner promises strength
+- 2-Cue: GF. No good suit to bid
+- 2JS: GF. Good suit
+- 2N+: Rubensohl. GF good suit
+</BiddingTree>
+
+<BiddingTree>
+1!c (1N)
+- 1N defenses apply with 6 points adjustment
+</BiddingTree>
+
+<BiddingTree>
+1!c (2X)
+- P: Non-discriptive
+- Dbl: Takeout
+- 2NJS: NF Constructive
+- 2N+: Rubensohl. 5+ in next suit. 6+ if inv only
+- 3X-1: Ask 4-card major
+- 3!s: Ask for stopper in X
+- 3N: To play
+</BiddingTree>
+
+<BiddingTree>
+1!c (3X)
+- Natural continuation
+</BiddingTree>
+
+<BiddingTree>
+1!c (P) 1!d (1X, or Dbl=!d)
+- P: Non-descriptive. Likely Min bal
+- Dbl / Rdbl: Takeout
+- NJS: Treat (1X) as opening
+- 1N: 14-16. Stop in X. Could be offshape
+- 2Cue: Michael
+- JS: Good suit. Max
+- 2N: Unusual 2N
+</BiddingTree>
+
+<BiddingTree>
+1!c (P) 1!d (1N)
+- 1N defenses apply. Focus on shape
+</BiddingTree>
+
+<BiddingTree>
+1!c (P) 1!d (2X)
+- P: Non-discriptive
+- Dbl: Takeout
+- 2NJS: NF Constructive
+- 2N+: Rubensohl. Good suit. Partner needs to break step if GF
+- 3X-1+: Undefined
+</BiddingTree>
