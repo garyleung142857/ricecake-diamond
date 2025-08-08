@@ -18,27 +18,29 @@ May have 5-card major or 6-card minor
 
 <BiddingTree>
 1!n
-- 2!c: Puppet to 2!d. "5+!d any strength, both minors GF, or a major invite"
+- 2!c: Puppet to 2!d. "5+!d any strength, or some invite"
     - (1): Weak in !d
     - (2): Inv with long !d
     - (3): Long !d SI
-    - (4): 5+!d 4=M GF
-    - (5): 5+4+ minors GF
-    - (6): Three suited short M SI, or
-    - (7): 4-5M inv (not 4-card flat)
-- 2!d: Trans to 2!h. 5+!h. Include 5-5 majors inv and 5+!h 4=!s GF
+    - (4): 5+!d 4=X GF
+    - (5): 4-5M inv (not 4-card flat)
+    - (6): Bal inv
+- 2!d: Trans to 2!h. 5+!h, or 4+4+ GF in majors
 - 2!h: Trans to 2!s. 5+!s. Not 5=!s inv
-- 2!s: Size ask.
-    - (1): Bal inv (may have a 4-card major if flat)
-    - (2): Bal SI, or
-    - (3): Inv with long !c
+- 2!s: 5+!c. Either:
+    - (1): Inv with long !c
+    - (2): 5+!c 4=X GF
 - 2!n: Trans to 3!c
     - (1): Weak in !c
-    - (2): 5+!c 4=M GF, or
-    - (3): Long !c SI
-- 3!c: 5+!s 4=!h GF
-- 3!d: 4=!h 4=!s GF
-- 3M: 4=M COG. Usually 3-oM. May pull to 5m after 3!n
+    - (2): Long !c SI
+- 3!c: GF. Ask 5-card major. May be 4-card major COG
+- 3!d: Either
+    - (1): 6+!h slam try. No void
+    - (2): short !h, 5+4+ minors (forcing to 4m only)
+- 3!h: Either
+    - (1): 6+!s slam try. No void
+    - (2): Short !s, 5+4+ minors (forcing to 4m only)
+- 3!s: 5+5+ minors. SI
 - 3!n: To play
 - 4!c/!d: Long !h/!s GF+
 - 4M: To play
@@ -51,34 +53,23 @@ May have 5-card major or 6-card minor
 1!n - 2!c; 2!d
 - P: Weak with !d
 - 2M: 4-5M inv. Not 4333 or 4432. [Keri](#majors-invite-keri)
-- 2!n: 5+!d GF (not both m)
-    - 3!c: Ask
-        - 3!d: 5+!d 4=!h [GF](#major-minor-game-forcing)
-        - 3!h: 5+!d 4=!s [GF](#major-minor-game-forcing)
-        - 3!s+: 6+!d [SI](#long-suit-slam-tries)
-- 3!c: 5+4+ minors GF.
-    - 3!d: Ask
-        - 3!h: Short !s. 5+4+ minors ST.
-            - 3!s: Ask better minor (3!n=!d, 4!c=!c)
-        - 3!s: Short !h. 5+4+ minors ST.
-            - 3!n: NF
-            - 4!c: Ask better minor (4!d=!d, 4!h+=!c and cue)
-            - 4!d: Fit !d
-            - 4!h+: Fit !c. Cue
-        - 3!n: 5-4 minors NF. 5422 or stiff honor. 4!c ask better minor
-        - 4m: 6m 4=om
-        - 4!h/!s: 6+!c/!d 5+om
-    - 3!h/!s: Fit !c/!d
+- 2!n: Bal inv. May have 4-card major
+    - P: Min. Others are max
+    - 3!c: Ask 4-card major
+        - 3!d: Both
+        - 3M: oM only
+        - 3!n: No
+    - 3!d: 4-4 majors
+    - 3M: 5=M
     - 3!n: To play
-- 3!d: Long !d inv
-- 3M: Three suited. Short oM
+- 3!c: Long !d. Some short. 3!d ask short (3M = short M, 3!n = short !c)
+- 3!d: 5+!d 4=!h GF
+- 3!h: 5+!d 4=!s GF
+- 3!s: 5+!d 4=!c ST
+- 3!n: Long !d. MST. No short
 </BiddingTree>
 
 ### Majors Invite (Keri)
-
-<Aside type="note">
-If the responder has a 4-card major but flat, go through 1!n - 2!s.
-</Aside>
 
 <BiddingTree>
 1!n - 2!c; 2!d - 2M
@@ -101,10 +92,7 @@ If the responder has a 4-card major but flat, go through 1!n - 2!s.
 
 <BiddingTree>
 1!n - 2!d/!h; 2M
-- 2!s: 5-5 majors inv+ or 5+!h 4=!s GF. 2!n ask, then
-    - 3!c: 5+!h 4=!s GF. Continue like [1!n - 3!c](#1N%20-%203%E2%99%A3)
-    - 3!d: 5+!h 5+!s GF. Natural continuation
-    - 3!h: 5-5 majors inv
+- 2!s: [4+4+ majors GF](#both-majors-gf)
 - 2!n: Art. 5+M 4+!c GF
     - 3!c: Ask
         - 3!d: 5+!c. 3!h Ask Hi / lo short
@@ -112,8 +100,11 @@ If the responder has a 4-card major but flat, go through 1!n - 2!s.
 - 3!c: Art. 5+M 4=!d GF. 3!d ask short (hi / lo / no)
 - 3!d: Art. 5+M 5+!d GF. 3!h Ask Hi / lo short
 - 3M: 6+M Inv
-- 3!n: 5=M COG. Disperse values. 3!n is still possible even with fit
-- 3oM/4!c+: [Long M ST](#long-suit-slam-tries)
+- 3!h: (After showing !s) 5-5 majors invite
+- 3!n: 5=M COG
+- 3!s/4m/4!h: Void spinter
+- 4M: Mild slam try
+- 4!n: Quantitative
 </BiddingTree>
 
 ### Super Accepts
@@ -126,134 +117,118 @@ If the responder has a 4-card major but flat, go through 1!n - 2!s.
 - 3M: 5=M
 </BiddingTree>
 
-After super accepts, no re-transfer except n immediate 4!d / 4!h.
+After super accepts, retransfer at 3M-1 if available, else 3M is signoff.
 
-## 2!s Size Ask
+### Both majors GF
+<BiddingTree>
+1!n - 2!d; 2!h - 2!s
+- 2!n: No 4-card major. Ask shape
+    - 3!c: 5+!h 4=!s.
+        - 3!d: Fit !h and ask short (Hi / lo / no)
+        - 3!h: Fit !h. Invite cuebid
+        - 3!n: To play
+    - 3!d: 5+!s 4=!h. Some short
+        - 3!h: Fit !s and ask short (Hi / lo)
+        - 3!s: Fit !s. Invite Cuebid
+        - 3!n: To play.
+    - 3!h: 5+5+ Majors
+        - 3!s: Fit !s. Invite cuebid
+        - 3!n: Not interested in 4M
+        - 4m: Fit !h. Cue bid
+    - 3!s: =5422
+    - 3!n: 4-4 Majors
+    - 4!c/!d: 6+!h/!s ST
+    - 4M: To play
+- 3!c/!d: 4+!h/!s. Fit. Ask short (Hi / lo / no)
+- 3!h: 4-4 majors.
+    - 3!s: !s better. Set !s trump
+    - 3!n/4m: !h better. Set !h trump
+    - 4M: To play
+</BiddingTree>
+
+## 2!s Invite in !c or 5!c 4=X GF
 
 <BiddingTree>
 1!n - 2!s
-- 2!n: Min
-    - 3!c: Was long !c inv
-    - 3!d: [Confit](#confit)
+- 2!n: Not Accept
+    - 3!c: To play
+    - 3!d: 5+!c 4=!h GF
+    - 3!h: 5+!c 4=!s GF
+    - 3!s: 5+!c 4=!d ST
     - 3!n: To play
-- 3!c: Max
-    - 3!d: [Confit](#confit)
-    - 3M: 4=M. Was bal inv. Then 3!s is Nat.
-    - 3!n: To play, either bal inv or long !c inv
+- 3!c: Accept. GF
+    - Same response as above
 </BiddingTree>
-
-### Confit
-
-Responder has a balanced hand, investigates the number of controls and a fit for a slam.
-
-<BiddingTree>
-1!n - 2!s; 2!n/3!c - 3!d
-- 3!h: 2-3 controls
-    - 3!s: Ask again
-        - 3!n: 2 controls
-        - 4!c: 3 controls, 4+ suits. Bid up the line
-    - 3!n: To play
-    - 4!c+: 4+ suits. Bid up the line
-- 3!s: 4 controls
-- 3!n: 5 controls
-- 4!c+: 6+ controls. 4+ suit. Bid up the line
-</BiddingTree>
-
-<Aside type="note">
-The number of control is based on 10-13 range. For 14-16 1!n, add one control to the requirements.
-</Aside>
-
-Then the development follows the following rules:
-- Any time the responder rebids NT, the opener must pass
-- The opener must not raise the level unless fitting
-- Both players bids suits up the line, rebidding shows 5
-- Fit partner by a raise
 
 ## 2!n Transfer to 3!c
 
 <BiddingTree>
 1!n - 2!n; 3!c
 - P: Weak !c to play
-- 3!d: 5+!c 4=!h [GF](#major-minor-game-forcing)
-- 3!h: 5+!c 4=!s [GF](#major-minor-game-forcing)
-- 3!s+: 6+!c [SI](#long-suit-slam-tries)
+- 3X: Long !c. Short X
 </BiddingTree>
 
-## 3!c 5+!s 4=!h Game Force
+## 3!c Ask 5-card Major
 
 <BiddingTree>
 1!n - 3!c
-- 3!d: Ask
-    - 3!h/!s: hi / lo short
-    - 3!n: 5422
-    - 4m: 6+!s short m
-- 3M: Fit
-- 3!n: Not interested in a major
+- 3!d: No 5-card major
+    - 3M: 4=oM. Choice of Game
+    - 3!n: To play
+- 3M: 5-card major
+    - 3!n: To play
+    - NS: Fit M. Cue
+    - 4M: To play
+    - 4!n: Quantitative
 </BiddingTree>
 
-## 3!d 4-4 Majors GF
+## 3!d/!h Long Major or Both Minors
+
 <BiddingTree>
 1!n - 3!d
-- 3M: Fit M. Not the worst hand
-    - 3!n: Disperse values. MST
-    - 3m: Shortness. ST
-    - 4M: To play
-- 3!n: NF
-- 4m: Double fit. Cue
-- 4M: Fit M. NF
-</BiddingTree>
-
-## Modules
-
-### Major-Minor Game Forcing
-
-After responder shows 5M 4+m after 1!n - 2!d/!h; 2!h/!s - 2!n/3!c/3!d; shape ask, opener can continue as follows
-
-<BiddingTree>
-5+M 4+m continuation
-- 4m: SI in m.
-- 4om/oM: SI in M. Cuebid
-- 3N/4M/5m: NF
-</BiddingTree>
-
-After responder shows 4=M 5+m, opener can continue as follows
-
-<BiddingTree>
-5+m 4=M continuation
-- 3M: Fit M. May have m fit
-- 3!n: No fit. NF
-- 3!s/4m: Fit m.
-</BiddingTree>
-
-### Long Suit Slam Tries
-
-After a transfer to a suit, responder can initiate long suit ST by bidding 3!s (or 3!h after !s), 3!n in a minor, or 4-level bids.
-
-<BiddingTree>
-Long suit slam tries (Major) and continuation
-- 3oM:  ST. No short (may have singleton Ace / King)
-    - 4M: Negative
-    - 3!n: Ask weak doubleton (worse than Jx)
-        - 4m: m
-        - 4M: oM
-        - 4!n: No
-- 4X: Splinter
-- 4M: Mild ST. NF
-- 4!n: RKCB
+- 3!h: Normal Bid. Promising at least Qx or xxx in !h
+    - 3!n: Short !h. Both minors. No slam ambitions. 
+        - 4m / 5m: to play
+        - 4!h: Good fit in one of the minors. SI
+    - 3!s: Long !h. General slam try. May be singleton in !s
+        - 3!n/4m: Cuebid (3!n = cue !s)
+        - 4!h: Bad hand. Poor control
+    - 4m: Long !h. Singleton in m
+    - 4!h: MST
+- 3!n: xx in !h
+- 4!h: Good minors, but xx in !h
 </BiddingTree>
 
 <BiddingTree>
-Long suit slam tries (Minor) and continuation
-- 3!s: ST. No short (may have singleton Ace / King) 
-    - 3!n: Negative
-    - 4m: Nat ST
-    - 4om: Ask weak doubleton (worse than Jx)
-        - 4!d / 5!c: (Original suit) om
-        - 4M: M
-        - 4!n: No
-- 3!n: Mild ST. NF
-- 4m: (Responder's suit) Kick back RKCB
-- 4X: Splinter
+1!n - 3!h
+- 3!s: Normal Bid. Promising at least Qx or xxx in !s
+    - 3!n: Short !s. Both minors. No slam ambitions. 
+        - 4m / 5m: to play
+        - 4!s: Good fit in one of the minors. SI
+    - 4!c: Long !h. General slam try. May be singleton in !h
+        - 4m/!h: Cuebid
+        - 4!s: Bad hand. Poor control
+    - 4!d/!h: Long !s. Singleton
+    - 4!s: MST
+- 3!n: xx in !s
+- 4!s: Good minors, but xx in !s
+</BiddingTree>
+
+## 3!s 5+5+ Minors
+
+<BiddingTree>
+1!n - 3!s
+- 3!n: No special fit
+    - 4!c: slam try 5-5
+        - 4!d: Ask short
+        - 4!h/!s: Fit !c/!d
+    - 4!d: =11(56). Then 4!h/!s fit !c/!d
+    - 4M: Void in M
+    - 4!n: Pick a minor
+- 4m: Fit m SI
+- 4!h: 3=!c 2=!d. Good fit in minor honors for slam
+- 4!s: 3=!d 2=!c. Good fit in minor honors for slam
+- 4!n: 3=!c 3=!d. Good fit in minor honors for slam
 </BiddingTree>
 
 ## 1!n Contested Auction
