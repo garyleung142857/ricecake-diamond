@@ -10,17 +10,11 @@ import BiddingTree from '/src/components/BiddingTree.astro'
 import { Aside } from '@astrojs/starlight/components'
 
 <BiddingTree>
-(1N)
-- Dbl: !s + another suit
+(1!n)
+- Dbl: !s + another suit (or GF bal if after 1!c (1!n))
     - P: Convert to penalty
     - 2!c: P/C
-    - 2!d: Art. Strong ask
-        - 2!h: 4-5!h. Min
-        - 2!s: Min. 4+m. 2!n ask m
-        - 2!n: 4-4 majors Max
-        - 3m: 4+!s 4+m Max. 3!h ask 5th !s
-        - 3M: 5=M 4=oM max
-        - 3!n: 5+!s 5+!h max
+    - 2!d: NF with !h tolerance
     - 2!h/!s: To play
 - 2m: !h + m
     - P/2!h: Preference
@@ -33,7 +27,8 @@ import { Aside } from '@astrojs/starlight/components'
         - 3!s: Max. 5=!h GF
 - 2M: 5+M Nat
 - 2!n: 5+!c 5+!d
-- 3X: Preemptive
+- 3m: If after 1!c (1!n), 5+!h 5+m GF, else nat preemptive
+- 3M: Nat. Long suit. 8 tricks
 </BiddingTree>
 
 <Aside type="note">
