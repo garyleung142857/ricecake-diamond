@@ -1,0 +1,121 @@
+---
+title: Lebensohl and Related Sequences
+description: Lebensohl, Rubensohl, Artificial Competitive 2NT, and Related Sequences
+sidebar:
+    label: Lebensohl and Related
+    order: 7
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components'
+
+
+## Basic Rules
+- 2!n is always F1R as a response to a double of 2M
+- We don't use any kind of Lebensohl / Rubensohl when we have bid a suit
+
+## Standard Lebensohl (SLEB)
+- Partner has made a takeout / strength showing double / double of multi 2m
+- RHO has length
+- The double must be followed by an opponent's pass, making the responder a compulsory position to act.
+- The responder did not act before.
+- Eg:
+    - (2M) P (P) Dbl; (P) ?
+    - (2!d=multi) P (2!h=P/C) Dbl; (P) ?
+    - (1M) P (2M) Dbl; (P) ?
+
+<BiddingTree>
+Standard Lebensohl Continuation
+- 2X: 0-6 Weak
+- 2!n: puppet to 3!c
+    - 3!c: Normal
+        - P/3X: To play
+        - 3Y: GF. 4-card in an unbid major. With stopper
+        - 3Z: Inv. NF
+        - 3!n: To play. Bal with stopper
+    - Others: Extra. Around 20+
+- 3X: 7-10. Constructive. NF
+- 3Y: GF. 4-card in an unbid major. Without stopper
+- 3Z: GF. 5+Z
+- 3!n: GF. Bal without stopper. Then 4m NF
+</BiddingTree>
+
+
+## Reversed Lebensohl (RLEB)
+
+- Partner has made a takeout double / strength showing double / double of multi 2m
+- LHO has length
+- The responder did not act before
+- Eg:
+    - (2M) Dbl - ?
+    - (2!d=multi) Dbl - ?
+    - (1M) Dbl (2M) ?
+    - (1M) Dbl (2M-1=good raise) ?
+
+<BiddingTree>
+Reversed Lebensohl Continuation
+- 2X: Natural. NF
+- 2!n: Inv+ F1.
+    - 3m: NF. A minimum double. May have 4oM
+        - 3-Cue: Ask stopper
+        - 3oM: Inv
+    - 3-Cue: GF. 4=oM (or 5=oM if you chose Dbl over bidding it; or 3=oM if no other good alternatives)
+    - 3oM/4m: GF/ST. Was too strong to overcall
+    - 3!n: To play
+- NJS: Nat. Not invite
+- 3-Cue: GF Ask stopper
+- JS: Inv 5+ suit
+- 3!n: To play
+</BiddingTree>
+
+
+## Transfer Lebensohl (TLeb)
+
+- At least one of us showed strength and none of us has not shown a suit (eg. 1!c / 1!d / 1!n / 1!c - 1!d)
+- Opponent bids a suit at 2 level.
+- The responder did not act before.
+- Eg:
+    - 1!n (2M) ?
+    - 1!c - 1!n (2M) ?
+    - 1!n (2!d=long M) ?
+    - 1!c (2M) ?
+    - 1!d (2M) ?
+
+<BiddingTree>
+Transfer Lebensohl continuation
+- Dbl: T/O
+- 2X: To play
+- 2!n: Any s/o, or !c invite, or to play in 3!n with stop
+    - 3!c: Normal Response. Reject !c invite
+        - P/3X: To play
+        - 3-Cue: Ask 4-card major. With stop
+        - 3!n: To play. Stopped
+    - 3!d: Accept !c invite. P/C
+- 3-Cue: Without ask stoper. Ask 4oM
+- 3!c/!d/!h/!s: Inv+ in next suit (GF if showing !c)
+    - 3-Shown-suit: NF
+    - Others: GF. Could be Stopper probe
+- 3!n: Want to play. No stop
+</BiddingTree>
+
+## Four Hearts 2!n
+
+Two specific sequences (Can be preceeded by we opened 1!c / 1!d / 1!c - 1!d)
+- (1!s) Dbl (2!s) Dbl; (P) ?
+- (1!s) Dbl (P) 2!s; (P) ?
+
+<BiddingTree>
+Four Hearts 2!n continuation
+- 2!n:  4=!h. Can have longer minor. F1R
+- 3m: Nat. No 4!h
+- 3!h: 5+!h GF
+- 3!s: GF. Bal or both minors
+- 3!n: To play. Was too strong for 1!n overcall
+- 4m: 6+m one suited.
+- 4!h: 6+!h to play
+</BiddingTree>
+
+## Scramble 2!n
+
+- Game is impossible from the auction
+- There are at least 2 possible suits to play in at 3-level
