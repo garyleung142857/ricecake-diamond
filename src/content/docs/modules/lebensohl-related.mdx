@@ -13,6 +13,7 @@ import { Aside } from '@astrojs/starlight/components'
 ## Basic Rules
 - 2!n is always F1R as a response to a double of 2M
 - We don't use any kind of Lebensohl when we have bid a suit
+- We don't use any kind of Lebensohl when game is impossible from the auction (2!n is scramble)
 
 ## Transfer Lebensohl (TLeb)
 - Partner has made a takeout / strength showing double / double of multi 2m
@@ -31,7 +32,7 @@ import { Aside } from '@astrojs/starlight/components'
 
 <BiddingTree>
 Transfer Lebensohl continuation
-- Dbl: (If available) T/O. Competitive. Expected 2-3 cards in opponent's suit
+- Dbl: (If available) T/O. Competitive. Expected 2-3 cards in opponent's suit. Continue like [reversed lebensohl](#reversed-lebensohl-rleb)
 - 2X: To play
 - 2!n: !c (Inv if responder is not forced), or less than inv in a suit, or bal/semi-bal GF with stop
     - 3!c: Normal Response. (If responder not forced) Reject !c invite
@@ -58,6 +59,7 @@ Transfer Lebensohl continuation
     - (2!d=multi) Dbl - ?
     - (1M) Dbl (2M) ?
     - (1M) Dbl (2M-1=good raise) ?
+    - 1!n (2M) Dbl (P); ?
 
 <BiddingTree>
 Reversed Lebensohl Continuation
@@ -102,8 +104,14 @@ Four Hearts 2!n continuation
 ## Natural 2!n
 
 Specific sequences:
-- (2X=Preemptive) 2!n
-- (2X=Preemptive) P (P) 2!n
-- (1M) P (2M) 2!n
+- (2X=Preemptive) ?
+- (2X=Preemptive) P (P) ?
+- (1M) P (2M) ?
 
-2!n Natural system on.
+<BiddingTree>
+Mostly Natural Sequences
+- 2!n: [Natural 2!n](/modules/2nt-natural) System on
+- NJS: Natural
+- 3M: (Cue). Ask stopper for 3!n. 4m is NF
+- 4m: 5+m 5+oM. GF
+</BiddingTree>
