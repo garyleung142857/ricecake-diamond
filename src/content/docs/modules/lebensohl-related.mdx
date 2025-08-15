@@ -15,51 +15,17 @@ import { Aside } from '@astrojs/starlight/components'
 - We don't use any kind of Lebensohl when we have bid a suit
 - We don't use any kind of Lebensohl when game is impossible from the auction (2!n is scramble)
 
-## Transfer Lebensohl (TLeb)
-- Partner has made a takeout / strength showing double / double of multi 2m
-- RHO has length
-- The responder did not act before.
-- Eg (responder is forced):
-    - (2M) P (P) Dbl; (P) ?
-    - (2!d=multi) P (2!h=P/C) Dbl; (P) ?
-    - (1M) P (2M) Dbl; (P) ?
-- Eg (responder is not forced)
-    - 1!n (2M) ?
-    - 1!c - 1!n (2M) ?
-    - 1!n (2!d=long M) ?
-    - 1!c (2M) ?
-    - 1!d (2M) ?
-
-<BiddingTree>
-Transfer Lebensohl continuation
-- Dbl: (If available) T/O. Competitive. Expected 2-3 cards in opponent's suit. Continue like [reversed lebensohl](#reversed-lebensohl-rleb)
-- 2X: To play
-- 2!n: !c (Inv if responder is not forced), or less than inv in a suit, or bal/semi-bal GF with stop
-    - 3!c: Normal Response. (If responder not forced) Reject !c invite
-        - P/3X: To play
-        - 3-Cue: Stopped. Ask 4oM
-        - 3!n: To play. Stopped
-    - 3!d: (If responder not forced) Accept !c invite
-- 3!c/!d/!h/!s: Inv+ in next unbid suit (GF if showing !c)
-    - 3-Shown-suit: NF
-    - 3-Cue: GF. (If available) ask stop for 3!n, or Fit and ST
-    - Others: Nat GF
-- 3-Cue: Without stopper. Ask 4oM
-- 3!n: Want to play. No stop
-- 4!c/!d: Long !h/!s
-</BiddingTree>
-
-## Reversed Lebensohl (RLEB)
+## Reversed Lebensohl
 
 - Partner has made a takeout double / strength showing double / double of multi 2m
-- LHO has length
+- Responder is forced to act (pass will convert to penalty)
 - The responder did not act before
 - Eg:
     - (2M) Dbl - ?
-    - (2!d=multi) Dbl - ?
-    - (1M) Dbl (2M) ?
-    - (1M) Dbl (2M-1=good raise) ?
     - 1!n (2M) Dbl (P); ?
+    - (2M) P (P) Dbl; (P) ?
+    - (2!d=multi) P (2!h=P/C) Dbl; (P) ?
+    - (1M) P (2M) Dbl; (P) ?
 
 <BiddingTree>
 Reversed Lebensohl Continuation
@@ -68,13 +34,42 @@ Reversed Lebensohl Continuation
     - 3m: NF. A minimum double. May have 4oM
         - 3-Cue: Ask stopper
         - 3oM: Inv
-    - 3-Cue: GF. 4=oM (or 5=oM if you chose Dbl over bidding it; or 3=oM if no other good alternatives)
+    - 3-Cue: GF. 4+oM (or 3=oM if no other good alternatives)
     - 3oM/4m: GF/ST. Was too strong to overcall
     - 3!n: To play
 - NJS: Nat. Not invite
 - 3-Cue: GF Ask stopper
 - JS: Inv 5+ suit
 - 3!n: To play
+</BiddingTree>
+
+## Rubensohl
+- At least one of us showed strength and none of us has not shown a suit (eg. 1!c / 1!d / 1!n / 1!c - 1!d / T/O double)
+- Opponent bids a suit at 2 level.
+- Responder did not act before.
+- Responder can pass
+- Eg:
+    - 1!n (2M) ?
+    - 1!c - 1!n (2M) ?
+    - 1!n (2!d=long M) ?
+    - 1!c (2M) ?
+    - 1!d (2M) ?
+    - (1M) Dbl (2M) ?
+
+<BiddingTree>
+Rubensohl continuation
+- Dbl: T/O. Competitive. Continue like [reversed lebensohl](#reversed-lebensohl)
+- 2X: To play
+- 2!n: 6+m comp of 5+!c inv+
+    - 3!c: Normal response
+        - 3!d: To play
+        - 3-unbid-M: Natural GF
+    - 3!d: !c support
+    - Higher: (Only after Dbl) Strong case. Natural GF
+- 3!c/!d/!h/!s: Inv+ in next unbid suit (GF if showing !c)
+- Xfer cue: Ask stop if opponent shown one known suit, else shows stop in the transfer suit
+- 3!n: To play
+- 4!c/!d: Long !h/!s
 </BiddingTree>
 
 
@@ -101,7 +96,7 @@ Four Hearts 2!n continuation
 - 2!n bidder is forced to act
 - There are at least 2 possible suits to play in at 3-level
 
-## Natural 2!n
+## Natural
 
 Specific sequences:
 - (2X=Preemptive) ?
