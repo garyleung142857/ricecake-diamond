@@ -1,0 +1,128 @@
+---
+title: 1♠ Weak Opening
+description: 1♠ Weak Opening Description
+sidebar:
+    label: 1♠ Weak Opening
+    order: 3
+---
+
+import BiddingTree from '/src/components/BiddingTree.astro'
+import { Aside } from '@astrojs/starlight/components';
+
+10-13 4+S. 4=S unbal or 4+S. May have a longer Minor
+
+
+<BiddingTree>
+1!s
+- 1!n: NF. 
+- 2!c: Art. GF. [Relay](#2-gf-relay)
+- 2!d: Art. 5+!h F1. Either 6+!h constructive (no 3=!s) or 5=!h inv+. No slam
+    - 2!h: 2-!h Catch all.
+        - P: 6+!h. To play
+        - 2!s/!n/3X: Nat inv
+    - 2!s/2!n/3!n: 6+!s 1-!h/2=!h/3=!h. Max
+    - 3m: 4=!s 2=!h 5+m Max
+    - 3!h: !h fit. Min
+    - 3!s: Good 6+!s Max
+    - 4m: Fit !h Splinter
+    - 4!h: To play
+- 2!h: Art. 3+!s Inv to game value. [Spiral raise](/modules/spiral-raises/)
+- 2!s: Wide range raise. [Spiral raise](/modules/spiral-raises/)
+- 2!n: Nat misfit inv. [Continuation](#1M%20-%202N)
+- 3m: 6+ suit. inv
+- 3!h/4m: Fragment raise
+- 3!s: Preempt. (4)5+!s
+- 3!n: To play
+- 4M: To play
+</BiddingTree>
+
+<BiddingTree>
+1!s - 2!n
+- P: To play
+- 3!c: Puppet to 3!d, then
+    - P: To play
+    - 3!h: 5+!h NF
+    - 3!s: 6+!s NF
+    - 4m: 4=M 7+m
+- 3!d: GF. Ask 4+!h or 2=!s
+- 3!h: 5+!s 5+!h GF
+- 3!s: 6+!s GF
+- 3!n: To play
+- 4m: 5M 6+m
+- 4M: To play
+</BiddingTree>
+
+### 2!c GF Relay
+
+<BiddingTree>
+1!s - 2!c
+- 2!d: 4=!s no 4!h; or 5332. 2!s ask.
+    - 2!n: 5332. Natural Continuation
+    - 3m: 5=m or bad 6m
+    - 3!h/!s: 6+!c/!d
+    - 3!h: =4144. Then 4m is forcing
+- 2!h: 4+!s 4+!h. 2!s ask
+    - 2!n: =44(14). Natural continuation
+    - 3m: Fragment
+    - 3!h: 5-5
+    - 3!s: 6-4
+- 2!s: 5=!s. 4+m. 2!n ask
+    - 3m: 4=m
+    - 3!h/!s: 5+!c / 5+!d
+- 2!n: 5M332 or 5M4m22
+- 3m/H: Nat. 5+5+. Good suits
+- 3!s: Solid suit. Set trump unless immediate 3!n by asker
+</BiddingTree>
+
+Responder breaking relay is natural.
+
+## 1!s Contested Auction
+
+<BiddingTree>
+1!s (Dbl)
+- P: Non descriptive. Later Dbl is competitive
+- Rdbl: Our board. Interested in penalizing opponents. Forcing to 2M
+- 1!n: Art. 3=M support. =Inv
+    - P: To play
+    - 2 any: NF
+    - 3 any: GF
+- 2!s: 3+!s support. Wide range. Less than invite. [Spiral Raise](/modules/spiral-raises/)
+- Suit: Expected to be competitive, but can be weaker. NF
+- 2!n: 4+!s. Limit raise+. Only 3!s is NF
+- JS: Preemptive
+</BiddingTree>
+
+<BiddingTree>
+1!s (Suit bid)
+- Dbl: (up to 3!d) Negative. Asks partner for unbid 4-card major or the longest suit
+    - 2!n: 5+5+ in M and lowest unbid suit. Non-min
+    - Cue: 5+5+ in M and highest unbid suit. Non-min
+    - JS: usually 6+. Non-min
+- Dbl: (from 3!h) Optional
+- NS: NF
+- JS: GF
+- Raise: Wide range
+- 3!s: Pre
+- 4!s: To play. Either way
+- Cue: Inv+ 4+ support
+- 2!n: Bal inv
+</BiddingTree>
+
+<BiddingTree>
+1!s (1!n)
+- P: Non-descriptive
+- Dbl: Optional. Correctable on offensive hands
+- 2m: Competitive. NF
+- 2!s: Wide range. [Spiral raise](/modules/spiral-raises/)
+- 2!n: 4+ support. Only 3!s is NF
+- 3X: Preemptive
+</BiddingTree>
+
+<BiddingTree>
+1!s (Michale / U2NT)
+- Dbl: Optional
+- Cue low: GF 5+ in 4th suit
+- Cue high: Fit M. Inv+
+- 3!s: Competitive
+- 4th suit: Constructive NF
+</BiddingTree>
